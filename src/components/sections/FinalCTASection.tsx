@@ -5,18 +5,34 @@ import retroCrt from "@/assets/retro-crt.jpeg";
 const FinalCTASection = () => {
   return (
     <section className="py-32 px-6 relative overflow-hidden">
-      {/* Subtle CRT image background */}
-      <div className="absolute inset-0">
-        <img src={retroCrt} alt="" className="w-full h-full object-cover opacity-[0.20]" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/85 to-background" />
-      </div>
-
       <div className="container max-w-3xl mx-auto relative z-10">
+        {/* CRT image as a visible design element above text */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.7 }}
+          className="flex justify-center mb-14"
+        >
+          <div className="relative w-[320px] sm:w-[400px] md:w-[480px] aspect-[4/3] rounded-lg overflow-hidden terminal-border">
+            <img
+              src={retroCrt}
+              alt="Retro CRT monitor"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
+            {/* Scanline overlay on image */}
+            <div className="absolute inset-0 opacity-[0.08]" style={{
+              background: "repeating-linear-gradient(0deg, transparent, transparent 2px, hsl(0 0% 100% / 0.1) 2px, hsl(0 0% 100% / 0.1) 4px)"
+            }} />
+          </div>
+        </motion.div>
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.6, delay: 0.15 }}
           className="text-center"
         >
           <span className="font-mono text-xs text-primary/60 tracking-[0.2em] uppercase mb-4 block crt-glow">/// final_prompt</span>
