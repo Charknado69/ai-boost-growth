@@ -22,7 +22,7 @@ export const useGlitchText = (originalText: string) => {
     // Snap back after a brief hold
     timeoutRef.current = setTimeout(() => {
       setDisplayText(originalText);
-    }, 150);
+    }, 300);
   }, [originalText]);
 
   const stopGlitch = useCallback(() => {
