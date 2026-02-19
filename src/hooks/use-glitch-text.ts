@@ -1,6 +1,6 @@
 import { useState, useCallback, useRef } from "react";
 
-const glitchChars = "アイウエオカキクケコサシスセソタチツテト0123456789ABCDEF";
+const glitchChars = "01";
 
 export const useGlitchText = (originalText: string) => {
   const [displayText, setDisplayText] = useState(originalText);
@@ -8,30 +8,21 @@ export const useGlitchText = (originalText: string) => {
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const startGlitch = useCallback(() => {
-    let iteration = 0;
-    const maxIterations = originalText.length * 2;
-
     if (intervalRef.current) clearInterval(intervalRef.current);
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
 
-    intervalRef.current = setInterval(() => {
-      setDisplayText(
-        originalText
-          .split("")
-          .map((char, i) => {
-            if (char === " ") return " ";
-            if (i < Math.floor(iteration / 1.5)) return originalText[i];
-            return glitchChars[Math.floor(Math.random() * glitchChars.length)];
-          })
-          .join("")
-      );
+    // Instant flip to binary
+    setDisplayText(
+      originalText
+        .split("")
+        .map((char) => char === " " ? " " : glitchChars[Math.floor(Math.random() * 2)])
+        .join("")
+    );
 
-      iteration++;
-      if (iteration > maxIterations) {
-        if (intervalRef.current) clearInterval(intervalRef.current);
-        setDisplayText(originalText);
-      }
-    }, 70);
+    // Snap back after a brief hold
+    timeoutRef.current = setTimeout(() => {
+      setDisplayText(originalText);
+    }, 150);
   }, [originalText]);
 
   const stopGlitch = useCallback(() => {
