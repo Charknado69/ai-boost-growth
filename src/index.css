@@ -5,25 +5,25 @@
 @layer base {
   :root {
     --background: 150 15% 4%;
-    --foreground: 140 10% 90%;
+    --foreground: 0 0% 93%;
 
     --card: 150 12% 7%;
-    --card-foreground: 140 10% 90%;
+    --card-foreground: 0 0% 93%;
 
     --popover: 150 12% 7%;
-    --popover-foreground: 140 10% 90%;
+    --popover-foreground: 0 0% 93%;
 
     --primary: 142 70% 45%;
     --primary-foreground: 150 15% 4%;
 
     --secondary: 150 10% 11%;
-    --secondary-foreground: 140 10% 85%;
+    --secondary-foreground: 0 0% 88%;
 
     --muted: 150 8% 14%;
     --muted-foreground: 150 5% 50%;
 
     --accent: 145 60% 38%;
-    --accent-foreground: 140 10% 95%;
+    --accent-foreground: 0 0% 95%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -35,11 +35,11 @@
     --radius: 0.75rem;
 
     --sidebar-background: 150 12% 5%;
-    --sidebar-foreground: 140 10% 90%;
+    --sidebar-foreground: 0 0% 93%;
     --sidebar-primary: 142 70% 45%;
     --sidebar-primary-foreground: 150 15% 4%;
     --sidebar-accent: 150 10% 11%;
-    --sidebar-accent-foreground: 140 10% 90%;
+    --sidebar-accent-foreground: 0 0% 93%;
     --sidebar-border: 150 10% 14%;
     --sidebar-ring: 142 70% 45%;
   }
@@ -52,6 +52,15 @@
 
   body {
     @apply bg-background text-foreground antialiased;
+    font-weight: 400;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-foreground;
+  }
+
+  p, li, span {
+    @apply text-foreground/85;
   }
 
   html {

@@ -31,7 +31,7 @@ const ProblemSection = () => {
             The rules of search have{" "}
             <span className="italic text-primary">changed</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed font-medium">
             Your potential customers are asking AI for answers — not scrolling through
             search results. If your brand isn't in those answers, you don't exist.
           </p>
