@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import GlitchButtonText from "@/components/GlitchButtonText";
 
 const links = [
   { label: "Problem", href: "#problem" },
@@ -31,7 +32,7 @@ const Navbar = () => {
             </a>
           ))}
           <Button size="sm" className="text-xs font-mono uppercase tracking-[0.15em] h-9 px-5" asChild>
-            <a href="#why-now">[ Get Audit ]</a>
+            <a href="#why-now"><GlitchButtonText text="[ Get Audit ]" /></a>
           </Button>
         </div>
 
@@ -55,7 +56,7 @@ const Navbar = () => {
             </a>
           ))}
           <Button size="sm" className="w-full text-xs font-mono uppercase tracking-[0.15em]" asChild>
-            <a href="#why-now" onClick={() => setOpen(false)}>[ Get Audit ]</a>
+            <a href="#why-now" onClick={() => setOpen(false)}><GlitchButtonText text="[ Get Audit ]" /></a>
           </Button>
         </div>
       )}

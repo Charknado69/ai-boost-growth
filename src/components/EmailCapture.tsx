@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
+import GlitchButtonText from "@/components/GlitchButtonText";
 
 interface EmailCaptureProps {
   buttonText?: string;
@@ -33,7 +34,7 @@ const EmailCapture = ({ buttonText = ">>> Initialize Audit", className = "" }: E
         className="h-12 bg-secondary/50 border-primary/20 text-foreground font-mono text-sm placeholder:text-primary/30 focus:border-primary/50 terminal-border"
       />
       <Button type="submit" size="lg" className="h-12 px-6 font-mono font-medium whitespace-nowrap text-sm tracking-wide">
-        {buttonText}
+        <GlitchButtonText text={buttonText} />
       </Button>
     </form>
   );
