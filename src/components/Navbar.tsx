@@ -15,8 +15,8 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 w-full z-50 bg-background/60 backdrop-blur-xl border-b border-border/30">
       <div className="container max-w-6xl mx-auto flex items-center justify-between h-14 px-6">
-        <a href="#" className="text-lg font-display font-semibold tracking-tight">
-          <span className="text-primary">Vyzora</span>.ai
+        <a href="#" className="font-mono text-lg font-semibold tracking-tight">
+          <span className="text-primary crt-glow">Vyzora</span><span className="text-muted-foreground">.ai</span>
         </a>
 
         {/* Desktop */}
@@ -25,13 +25,13 @@ const Navbar = () => {
             <a
               key={l.href}
               href={l.href}
-              className="text-xs uppercase tracking-[0.2em] text-muted-foreground hover:text-foreground transition-colors"
+              className="text-xs font-mono uppercase tracking-[0.2em] text-muted-foreground hover:text-primary transition-colors"
             >
               {l.label}
             </a>
           ))}
-          <Button size="sm" className="text-xs uppercase tracking-[0.15em] h-9 px-5" asChild>
-            <a href="#why-now">Get Audit</a>
+          <Button size="sm" className="text-xs font-mono uppercase tracking-[0.15em] h-9 px-5" asChild>
+            <a href="#why-now">[ Get Audit ]</a>
           </Button>
         </div>
 
@@ -49,13 +49,13 @@ const Navbar = () => {
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className="block text-xs uppercase tracking-[0.2em] text-muted-foreground hover:text-foreground transition-colors"
+              className="block text-xs font-mono uppercase tracking-[0.2em] text-muted-foreground hover:text-primary transition-colors"
             >
               {l.label}
             </a>
           ))}
-          <Button size="sm" className="w-full text-xs uppercase tracking-[0.15em]" asChild>
-            <a href="#why-now" onClick={() => setOpen(false)}>Get Audit</a>
+          <Button size="sm" className="w-full text-xs font-mono uppercase tracking-[0.15em]" asChild>
+            <a href="#why-now" onClick={() => setOpen(false)}>[ Get Audit ]</a>
           </Button>
         </div>
       )}

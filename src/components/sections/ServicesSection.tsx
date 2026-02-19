@@ -38,6 +38,7 @@ const ServicesSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-20"
         >
+          <span className="font-mono text-xs text-primary/60 tracking-[0.2em] uppercase mb-4 block crt-glow">/// services.init()</span>
           <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-medium mb-6">
             What we <span className="italic text-primary">do</span>
           </h2>
@@ -56,16 +57,16 @@ const ServicesSection = () => {
               transition={{ duration: 0.5, delay: i * 0.15 }}
               className="grid md:grid-cols-[100px_1fr_1fr] gap-6 md:gap-10 py-10 border-t border-border/50 last:border-b items-start"
             >
-              <span className="font-display text-5xl font-medium text-primary/30">{service.num}</span>
+              <span className="font-mono text-5xl font-medium text-primary/30 crt-glow">{service.num}</span>
               <div>
                 <h3 className="font-display text-2xl font-medium mb-1">{service.title}</h3>
-                <span className="text-xs text-primary uppercase tracking-[0.2em] font-medium">{service.duration}</span>
+                <span className="text-xs text-primary font-mono uppercase tracking-[0.2em]">{service.duration}</span>
                 <p className="text-muted-foreground mt-4 text-sm leading-relaxed">{service.description}</p>
               </div>
               <ul className="space-y-2 md:pt-1">
                 {service.features.map((f, j) => (
-                  <li key={j} className="text-sm text-foreground/70 flex items-center gap-3">
-                    <span className="w-1 h-1 rounded-full bg-primary shrink-0" />
+                  <li key={j} className="text-sm text-foreground/70 flex items-center gap-3 font-mono">
+                    <span className="text-primary/50 text-xs">▸</span>
                     {f}
                   </li>
                 ))}
