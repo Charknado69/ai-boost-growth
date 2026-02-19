@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Quote } from "lucide-react";
 
 const quotes = [
   {
@@ -21,21 +20,21 @@ const quotes = [
 
 const QuotesSection = () => {
   return (
-    <section id="quotes" className="py-24 px-6">
-      <div className="container max-w-5xl mx-auto">
+    <section id="quotes" className="py-32 px-6">
+      <div className="container max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-20"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            The experts <span className="text-primary">agree</span>
+          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-medium mb-6">
+            The experts <span className="italic text-primary">agree</span>
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="space-y-0">
           {quotes.map((q, i) => (
             <motion.div
               key={i}
@@ -43,13 +42,15 @@ const QuotesSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.5, delay: i * 0.15 }}
-              className="p-8 rounded-xl bg-card border border-border relative"
+              className="py-12 border-t border-border/50 last:border-b"
             >
-              <Quote className="w-8 h-8 text-primary/30 absolute top-6 right-6" />
-              <p className="text-foreground/90 italic leading-relaxed mb-6 text-sm">"{q.text}"</p>
-              <div>
-                <p className="font-semibold text-sm">{q.author}</p>
-                <p className="text-xs text-muted-foreground">{q.role}</p>
+              <p className="font-display text-xl sm:text-2xl md:text-3xl italic text-foreground/90 leading-snug mb-6">
+                "{q.text}"
+              </p>
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-px bg-primary" />
+                <span className="text-sm font-medium">{q.author}</span>
+                <span className="text-xs text-muted-foreground">{q.role}</span>
               </div>
             </motion.div>
           ))}

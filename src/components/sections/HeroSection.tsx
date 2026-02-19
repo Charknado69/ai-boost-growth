@@ -5,38 +5,49 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Ambient glow */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-primary/10 blur-[120px] animate-pulse-glow pointer-events-none" />
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[800px] h-[800px] rounded-full bg-primary/8 blur-[160px] animate-pulse-glow pointer-events-none" />
 
-      <div className="container relative z-10 px-6 py-24 text-center">
+      <div className="container relative z-10 px-6 py-32 text-center">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="max-w-3xl mx-auto"
+          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+          className="max-w-4xl mx-auto"
         >
-          <div className="inline-block mb-6 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/5 text-primary text-sm font-medium">
+          <div className="inline-block mb-8 px-5 py-2 rounded-full border border-primary/20 bg-primary/5 text-primary text-xs uppercase tracking-[0.2em] font-medium">
             AEO & GEO Optimization
           </div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight mb-6">
-            AI is rewriting how customers find businesses.{" "}
-            <span className="text-primary">Is yours visible?</span>
+          <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-medium leading-[1.05] tracking-tight mb-8">
+            AI is rewriting how customers{" "}
+            <span className="italic text-primary">find</span> businesses
           </h1>
 
-          <p className="text-lg sm:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg text-muted-foreground mb-14 max-w-2xl mx-auto leading-relaxed">
             Traditional SEO won't save you. ChatGPT, Perplexity, and Google AI Overviews are
             replacing search results with AI answers — and most businesses aren't in them.
           </p>
 
-          <div className="flex justify-center">
+          <div className="flex justify-center mb-5">
             <EmailCapture buttonText="Get Your Free AI Visibility Audit" />
           </div>
 
-          <p className="mt-4 text-sm text-muted-foreground">
+          <p className="text-xs text-muted-foreground tracking-wide uppercase">
             Free audit · No commitment · Results in 48 hours
           </p>
         </motion.div>
       </div>
+
+      {/* Scroll indicator */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.5, duration: 1 }}
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3"
+      >
+        <span className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground">Scroll</span>
+        <div className="w-px h-8 bg-gradient-to-b from-muted-foreground/50 to-transparent" />
+      </motion.div>
     </section>
   );
 };
