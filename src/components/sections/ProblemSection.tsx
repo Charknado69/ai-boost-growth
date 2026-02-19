@@ -27,7 +27,7 @@ const ProblemSection = () => {
           className="text-center mb-20"
         >
           <span className="font-mono text-xs text-primary/60 tracking-[0.2em] uppercase mb-4 block crt-glow">/// system_alert</span>
-          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-medium mb-6">
+          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-medium mb-6 matrix-heading-glow">
             The rules of search have{" "}
             <span className="italic text-primary">changed</span>
           </h2>

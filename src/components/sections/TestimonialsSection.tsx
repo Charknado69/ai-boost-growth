@@ -48,7 +48,7 @@ const TestimonialsSection = () => {
           className="text-center mb-20"
         >
           <span className="font-mono text-xs text-primary/60 tracking-[0.2em] uppercase mb-4 block crt-glow">/// client_output.log</span>
-          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-medium mb-6">
+          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-medium mb-6 matrix-heading-glow">
             Real results from <span className="italic text-primary">real clients</span>
           </h2>
         </motion.div>

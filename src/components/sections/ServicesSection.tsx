@@ -44,7 +44,7 @@ const ServicesSection = () => {
           className="text-center mb-20"
         >
           <span className="font-mono text-xs text-primary/60 tracking-[0.2em] uppercase mb-4 block crt-glow">/// services.init()</span>
-          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-medium mb-6">
+          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-medium mb-6 matrix-heading-glow">
             What we <span className="italic text-primary">do</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
