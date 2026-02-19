@@ -9,7 +9,7 @@ export const useGlitchText = (originalText: string) => {
 
   const startGlitch = useCallback(() => {
     let iteration = 0;
-    const maxIterations = originalText.length * 3;
+    const maxIterations = originalText.length * 2;
 
     if (intervalRef.current) clearInterval(intervalRef.current);
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
@@ -20,7 +20,7 @@ export const useGlitchText = (originalText: string) => {
           .split("")
           .map((char, i) => {
             if (char === " ") return " ";
-            if (i < Math.floor(iteration / 3)) return originalText[i];
+            if (i < Math.floor(iteration / 1.5)) return originalText[i];
             return glitchChars[Math.floor(Math.random() * glitchChars.length)];
           })
           .join("")
@@ -31,7 +31,7 @@ export const useGlitchText = (originalText: string) => {
         if (intervalRef.current) clearInterval(intervalRef.current);
         setDisplayText(originalText);
       }
-    }, 40);
+    }, 70);
   }, [originalText]);
 
   const stopGlitch = useCallback(() => {
