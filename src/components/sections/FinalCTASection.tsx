@@ -7,8 +7,8 @@ const FinalCTASection = () => {
     <section className="py-32 px-6 relative overflow-hidden">
       {/* Subtle CRT image background */}
       <div className="absolute inset-0">
-        <img src={retroCrt} alt="" className="w-full h-full object-cover opacity-[0.04]" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/95 to-background" />
+        <img src={retroCrt} alt="" className="w-full h-full object-cover opacity-[0.20]" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/85 to-background" />
       </div>
 
       <div className="container max-w-3xl mx-auto relative z-10">
