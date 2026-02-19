@@ -6,7 +6,7 @@ const FinalCTASection = () => {
   return (
     <section className="py-32 px-6 relative overflow-hidden">
       <div className="container max-w-3xl mx-auto relative z-10">
-        {/* CRT image as a visible design element above text */}
+        {/* CRT image as a visible design element, blended into background */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -14,17 +14,14 @@ const FinalCTASection = () => {
           transition={{ duration: 0.7 }}
           className="flex justify-center mb-14"
         >
-          <div className="relative w-[320px] sm:w-[400px] md:w-[480px] aspect-[4/3] rounded-lg overflow-hidden terminal-border">
+          <div className="relative w-[320px] sm:w-[400px] md:w-[480px] aspect-[4/3] overflow-hidden">
             <img
               src={retroCrt}
               alt="Retro CRT monitor"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
-            {/* Scanline overlay on image */}
-            <div className="absolute inset-0 opacity-[0.08]" style={{
-              background: "repeating-linear-gradient(0deg, transparent, transparent 2px, hsl(0 0% 100% / 0.1) 2px, hsl(0 0% 100% / 0.1) 4px)"
-            }} />
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/40" />
+            <div className="absolute inset-0 bg-gradient-to-r from-background/50 via-transparent to-background/50" />
           </div>
         </motion.div>
 
