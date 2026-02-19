@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import EmailCapture from "@/components/EmailCapture";
+import MatrixRain from "@/components/MatrixRain";
 import greenCorridor from "@/assets/green-corridor.jpeg";
 
 const HeroSection = () => {
@@ -14,6 +15,9 @@ const HeroSection = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/80 to-background" />
       </div>
+
+      {/* Matrix rain */}
+      <MatrixRain />
 
       {/* Ambient glow */}
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[800px] h-[800px] rounded-full bg-primary/8 blur-[160px] animate-pulse-glow pointer-events-none" />
