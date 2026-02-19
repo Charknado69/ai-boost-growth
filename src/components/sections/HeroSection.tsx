@@ -10,9 +10,9 @@ const HeroSection = () => {
         <img
           src={greenCorridor}
           alt=""
-          className="w-full h-full object-cover opacity-[0.15]"
+          className="w-full h-full object-cover opacity-[0.25]"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/90 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/85 to-background" />
       </div>
 
       {/* Ambient glow */}
