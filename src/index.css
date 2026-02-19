@@ -70,4 +70,37 @@
     background-repeat: repeat;
     background-size: 256px 256px;
   }
+
+  /* CRT scanline overlay */
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 9998;
+    pointer-events: none;
+    opacity: 0.015;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      hsl(0 0% 100% / 0.03) 2px,
+      hsl(0 0% 100% / 0.03) 4px
+    );
+  }
+}
+
+@layer components {
+  .terminal-text {
+    @apply font-mono text-primary;
+    text-shadow: 0 0 10px hsl(var(--primary) / 0.5), 0 0 20px hsl(var(--primary) / 0.2);
+  }
+
+  .terminal-border {
+    border: 1px solid hsl(var(--primary) / 0.2);
+    box-shadow: 0 0 15px hsl(var(--primary) / 0.05), inset 0 0 15px hsl(var(--primary) / 0.02);
+  }
+
+  .crt-glow {
+    text-shadow: 0 0 8px hsl(var(--primary) / 0.6), 0 0 16px hsl(var(--primary) / 0.3);
+  }
 }

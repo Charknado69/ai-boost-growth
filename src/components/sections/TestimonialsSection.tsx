@@ -42,6 +42,7 @@ const TestimonialsSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-20"
         >
+          <span className="font-mono text-xs text-primary/60 tracking-[0.2em] uppercase mb-4 block crt-glow">/// client_output.log</span>
           <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-medium mb-6">
             Real results from <span className="italic text-primary">real clients</span>
           </h2>
@@ -55,13 +56,13 @@ const TestimonialsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="p-8 md:p-10 border-l-2 border-primary/30 bg-card/50"
+              className="p-8 md:p-10 terminal-border bg-card/50"
             >
               <p className="text-foreground/80 leading-relaxed mb-8 text-sm italic">"{t.quote}"</p>
               <div>
                 <p className="font-medium text-sm">{t.name}</p>
-                <p className="text-xs text-muted-foreground mt-0.5">
-                  {t.role}, {t.company}
+                <p className="text-xs text-muted-foreground font-mono mt-0.5">
+                  {t.role} @ {t.company}
                 </p>
               </div>
             </motion.div>

@@ -19,6 +19,7 @@ const WhyNowSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-20"
         >
+          <span className="font-mono text-xs text-primary/60 tracking-[0.2em] uppercase mb-4 block crt-glow">/// timeline.render()</span>
           <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-medium mb-6">
             Why <span className="italic text-primary">now</span>?
           </h2>
@@ -37,7 +38,7 @@ const WhyNowSection = () => {
               transition={{ duration: 0.4, delay: i * 0.12 }}
               className="grid grid-cols-[80px_1fr] md:grid-cols-[120px_1fr] gap-6 items-baseline py-6 border-t border-border/50 last:border-b"
             >
-              <span className="font-display text-3xl md:text-4xl font-medium text-primary">{item.year}</span>
+              <span className="font-mono text-3xl md:text-4xl font-medium text-primary crt-glow">{item.year}</span>
               <p className="text-foreground/70 text-sm md:text-base leading-relaxed">{item.event}</p>
             </motion.div>
           ))}
@@ -51,7 +52,7 @@ const WhyNowSection = () => {
             transition={{ duration: 0.6 }}
             className="flex justify-center"
           >
-            <EmailCapture buttonText="Claim Your Audit Now" />
+            <EmailCapture buttonText=">>> Claim Audit" />
           </motion.div>
         </div>
       </div>

@@ -26,6 +26,7 @@ const ProblemSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-20"
         >
+          <span className="font-mono text-xs text-primary/60 tracking-[0.2em] uppercase mb-4 block crt-glow">/// system_alert</span>
           <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-medium mb-6">
             The rules of search have{" "}
             <span className="italic text-primary">changed</span>
@@ -46,7 +47,7 @@ const ProblemSection = () => {
               transition={{ duration: 0.5, delay: i * 0.12 }}
               className="grid md:grid-cols-[200px_1fr] gap-6 md:gap-12 items-baseline py-8 border-t border-border/50 last:border-b"
             >
-              <div className="font-display text-5xl md:text-6xl font-medium text-primary">
+              <div className="font-mono text-5xl md:text-6xl font-medium text-primary crt-glow">
                 {item.stat}
               </div>
               <p className="text-foreground/70 text-base leading-relaxed">

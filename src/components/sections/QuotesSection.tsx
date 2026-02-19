@@ -29,6 +29,7 @@ const QuotesSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-20"
         >
+          <span className="font-mono text-xs text-primary/60 tracking-[0.2em] uppercase mb-4 block crt-glow">/// expert_consensus</span>
           <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-medium mb-6">
             The experts <span className="italic text-primary">agree</span>
           </h2>
@@ -48,9 +49,9 @@ const QuotesSection = () => {
                 "{q.text}"
               </p>
               <div className="flex items-center gap-3">
-                <div className="w-8 h-px bg-primary" />
+                <span className="font-mono text-xs text-primary/50">▸▸</span>
                 <span className="text-sm font-medium">{q.author}</span>
-                <span className="text-xs text-muted-foreground">{q.role}</span>
+                <span className="text-xs text-muted-foreground font-mono">{q.role}</span>
               </div>
             </motion.div>
           ))}
