@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import retroChimp from "@/assets/retro-chimp.jpeg";
 const testimonials = [
   {
     quote:
@@ -33,8 +33,13 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section id="testimonials" className="py-32 px-6">
-      <div className="container max-w-5xl mx-auto">
+    <section id="testimonials" className="py-32 px-6 relative overflow-hidden">
+      {/* Background accent image */}
+      <div className="absolute inset-0">
+        <img src={retroChimp} alt="" className="w-full h-full object-cover opacity-[0.06]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/92 to-background" />
+      </div>
+      <div className="container max-w-5xl mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import retroKeyboard from "@/assets/retro-keyboard.jpeg";
 const services = [
   {
     num: "01",
@@ -29,8 +29,13 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="py-32 px-6">
-      <div className="container max-w-5xl mx-auto">
+    <section id="services" className="py-32 px-6 relative overflow-hidden">
+      {/* Background accent image */}
+      <div className="absolute inset-0">
+        <img src={retroKeyboard} alt="" className="w-full h-full object-cover opacity-[0.08]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background" />
+      </div>
+      <div className="container max-w-5xl mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
