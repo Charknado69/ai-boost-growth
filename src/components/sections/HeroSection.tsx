@@ -29,7 +29,7 @@ const HeroSection = () => {
             <span className="crt-glow">/// AEO & GEO Optimization</span>
           </div>
 
-          <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-medium leading-[1.05] tracking-tight mb-8">
+          <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-medium leading-[1.05] tracking-tight mb-8 matrix-heading-glow">
             AI is rewriting how customers{" "}
             <span className="italic text-primary crt-glow">find</span> businesses
           </h1>

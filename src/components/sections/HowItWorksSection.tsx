@@ -30,7 +30,7 @@ const HowItWorksSection = () => {
           className="text-center mb-20"
         >
           <span className="font-mono text-xs text-primary/60 tracking-[0.2em] uppercase mb-4 block crt-glow">/// process.execute()</span>
-          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-medium mb-6">
+          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-medium mb-6 matrix-heading-glow">
             How it <span className="italic text-primary">works</span>
           </h2>
         </motion.div>
