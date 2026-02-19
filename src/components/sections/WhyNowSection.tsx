@@ -10,24 +10,24 @@ const timeline = [
 
 const WhyNowSection = () => {
   return (
-    <section id="why-now" className="py-24 px-6">
+    <section id="why-now" className="py-32 px-6">
       <div className="container max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-20"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            Why <span className="text-primary">now</span>?
+          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-medium mb-6">
+            Why <span className="italic text-primary">now</span>?
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
             Early movers are capturing AI visibility that will be exponentially harder to win later.
           </p>
         </motion.div>
 
-        <div className="space-y-0 mb-16">
+        <div className="space-y-0 mb-20">
           {timeline.map((item, i) => (
             <motion.div
               key={i}
@@ -35,29 +35,25 @@ const WhyNowSection = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.4, delay: i * 0.12 }}
-              className="flex items-start gap-6 py-4"
+              className="grid grid-cols-[80px_1fr] md:grid-cols-[120px_1fr] gap-6 items-baseline py-6 border-t border-border/50 last:border-b"
             >
-              <div className="flex flex-col items-center">
-                <div className="w-3 h-3 rounded-full bg-primary shrink-0 mt-1" />
-                {i < timeline.length - 1 && <div className="w-px h-full bg-border min-h-[2rem]" />}
-              </div>
-              <div>
-                <span className="text-primary font-bold text-sm">{item.year}</span>
-                <p className="text-foreground/80 text-sm">{item.event}</p>
-              </div>
+              <span className="font-display text-3xl md:text-4xl font-medium text-primary">{item.year}</span>
+              <p className="text-foreground/70 text-sm md:text-base leading-relaxed">{item.event}</p>
             </motion.div>
           ))}
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6 }}
-          className="flex justify-center"
-        >
-          <EmailCapture buttonText="Claim Your Audit Now" />
-        </motion.div>
+        <div className="border-t border-border/50 pt-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6 }}
+            className="flex justify-center"
+          >
+            <EmailCapture buttonText="Claim Your Audit Now" />
+          </motion.div>
+        </div>
       </div>
     </section>
   );

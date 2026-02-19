@@ -30,9 +30,9 @@ const EmailCapture = ({ buttonText = "Get Your Free Audit", className = "" }: Em
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         required
-        className="h-12 bg-secondary border-border text-foreground placeholder:text-muted-foreground"
+        className="h-12 bg-secondary/50 border-border/50 text-foreground placeholder:text-muted-foreground focus:border-primary/50"
       />
-      <Button type="submit" size="lg" className="h-12 px-6 font-semibold whitespace-nowrap">
+      <Button type="submit" size="lg" className="h-12 px-6 font-medium whitespace-nowrap text-sm tracking-wide">
         {buttonText}
       </Button>
     </form>
