@@ -37,7 +37,7 @@ const FinalCTASection = () => {
             Don't let AI make you{" "}
             <span className="italic text-primary">invisible</span>
           </h2>
-          <p className="text-muted-foreground text-lg mb-12 max-w-xl mx-auto leading-relaxed">
+          <p className="text-muted-foreground text-lg mb-12 max-w-xl mx-auto leading-relaxed font-medium">
             Limited sprint slots available each quarter. Secure your spot and get a free AI
             visibility audit for your business.
           </p>

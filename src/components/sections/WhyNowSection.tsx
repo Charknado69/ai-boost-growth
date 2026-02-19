@@ -23,7 +23,7 @@ const WhyNowSection = () => {
           <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-medium mb-6 matrix-heading-glow">
             Why <span className="italic text-primary">now</span>?
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed font-medium">
             Early movers are capturing AI visibility that will be exponentially harder to win later.
           </p>
         </motion.div>

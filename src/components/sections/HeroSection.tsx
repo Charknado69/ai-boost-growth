@@ -34,7 +34,7 @@ const HeroSection = () => {
             <span className="italic text-primary crt-glow">find</span> businesses
           </h1>
 
-          <p className="text-base sm:text-lg text-muted-foreground mb-14 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg text-muted-foreground mb-14 max-w-2xl mx-auto leading-relaxed font-medium">
             Traditional SEO won't save you. ChatGPT, Perplexity, and Google AI Overviews are
             replacing search results with AI answers — and most businesses aren't in them.
           </p>
