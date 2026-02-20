@@ -39,9 +39,10 @@ const FinalCTASection = () => {
             is closing.
           </h2>
           <p className="text-muted-foreground text-lg mb-12 max-w-xl mx-auto leading-relaxed font-medium">
-            We take a limited number of sprint clients each quarter. Claim your free AI visibility
-            audit — see exactly where you stand vs. competitors in ChatGPT, Perplexity, and Google
-            AI Overviews. No credit card. No sales pitch. Just data.
+            We limit sprint intake to keep quality high. Claim your free audit and find out exactly
+            where you stand — you'll get a clear breakdown of your brand's citations across ChatGPT,
+            Perplexity, and Google AI Overviews, benchmarked against your top competitors. No credit
+            card. No sales call unless you want one. Just clarity.
           </p>
 
           <div className="flex justify-center mb-5">

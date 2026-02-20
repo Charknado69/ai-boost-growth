@@ -5,7 +5,7 @@ const timeline = [
   { year: "2023", event: "ChatGPT reaches 100M users in 60 days — the fastest product adoption in history. AI search goes mainstream overnight." },
   { year: "2024", event: "Google launches AI Overviews to 1B+ users globally. Organic click-through rates drop. The landscape shifts permanently." },
   { year: "2025", event: "Perplexity, Copilot, and Claude enter the mainstream. Multiple AI platforms are now actively recommending brands to buyers. AI-first discovery becomes the default for every high-intent decision." },
-  { year: "2026", event: "Early movers own the AI answer space in their categories. Brands that waited are spending significantly more trying to claw back visibility. The gap compounds every quarter." },
+  { year: "2026", event: "Brands that moved early are building durable AI visibility advantages. Those that haven't started are facing a steeper climb — and a more crowded space." },
 ];
 
 const WhyNowSection = () => {
