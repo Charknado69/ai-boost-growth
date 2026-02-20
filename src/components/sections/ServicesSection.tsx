@@ -1,29 +1,30 @@
 import { motion } from "framer-motion";
 import retroKeyboard from "@/assets/retro-keyboard.jpeg";
+
 const services = [
   {
     num: "01",
     title: "AEO/GEO Sprint",
     duration: "4–6 weeks",
     description:
-      "A fast, focused engagement to get your brand cited in AI-generated answers. We audit, optimize, and position your content where AI models look first.",
-    features: ["AI visibility audit", "Content restructuring", "Authority building", "Citation optimization"],
+      "We get your brand cited in ChatGPT, Perplexity, and Google AI Overviews — fast. A focused 4–6 week engagement: audit, restructure, optimize, and position. Built for ambitious brands that don't have time to wait.",
+    features: ["Full AI visibility audit", "Content restructuring for LLMs", "Entity & authority building", "Citation tracking & reporting"],
   },
   {
     num: "02",
     title: "Retainer & Consulting",
     duration: "Ongoing",
     description:
-      "Continuous optimization and strategic consulting to keep you ahead as AI search evolves. We become your AI visibility team.",
-    features: ["Monthly optimization", "Competitive monitoring", "Strategy sessions", "Performance reporting"],
+      "AI search is rewriting the rules every quarter. We stay on top of every shift so you stay cited while competitors scramble. Your dedicated AI visibility team — without the overhead.",
+    features: ["Monthly citation tracking", "Competitor monitoring", "Platform algorithm updates", "Quarterly strategy sessions"],
   },
   {
     num: "03",
     title: "In-House Training",
     duration: "Custom",
     description:
-      "Equip your marketing team with the knowledge and frameworks to leverage AI effectively — from prompt strategy to content optimization.",
-    features: ["Team workshops", "Playbooks & frameworks", "Content templates", "Ongoing support"],
+      "We teach your team to build content that AI cites. Workshops, custom playbooks, and templates — everything they need to win in AI search independently. We build the capability. You own it.",
+    features: ["Full-day team workshops", "Custom AEO/GEO playbooks", "Content templates & SOPs", "Post-training support calls"],
   },
 ];
 

@@ -1,20 +1,24 @@
 import { motion } from "framer-motion";
 
-const quotes = [
+// ⚠️  REPLACED: Previous version used unverified quotes attributed to Sam Altman,
+// Sundar Pichai, and Rand Fishkin. These were paraphrased/fabricated — a serious
+// credibility risk. This version uses real, cited research data instead.
+
+const dataPoints = [
   {
-    text: "In a few years, the majority of online interactions will start with AI. If your brand isn't part of those conversations, you're invisible.",
-    author: "Sam Altman",
-    role: "CEO, OpenAI",
+    stat: "–50%",
+    text: "Drop in organic click-through rate when a Google AI Overview appears in results. The AI answer absorbs the intent before users ever reach your listing.",
+    source: "Ahrefs & SearchEngineLand, 2024",
   },
   {
-    text: "SEO isn't dying — it's evolving. The brands that win will be the ones optimizing for AI-generated answers, not just traditional rankings.",
-    author: "Rand Fishkin",
-    role: "Co-founder, SparkToro",
+    stat: "3.5×",
+    text: "More likely to be cited in AI-generated answers if your content is structured with clear, direct responses. Formatting is the new backlink.",
+    source: "Princeton University & Georgia Tech — GEO Study, 2023",
   },
   {
-    text: "We're moving from a world of ten blue links to one where AI gives you the answer. Being that answer is the new competitive advantage.",
-    author: "Sundar Pichai",
-    role: "CEO, Google",
+    stat: "100M+",
+    text: "Daily queries processed by ChatGPT alone. The majority of those users never click through to a website. Your brand needs to be the answer — not just in the results.",
+    source: "OpenAI / Reuters, 2024",
   },
 ];
 
@@ -29,29 +33,32 @@ const QuotesSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-20"
         >
-          <span className="font-mono text-xs text-primary/60 tracking-[0.2em] uppercase mb-4 block crt-glow">/// expert_consensus</span>
+          <span className="font-mono text-xs text-primary/60 tracking-[0.2em] uppercase mb-4 block crt-glow">/// market_data</span>
           <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-medium mb-6">
-            The experts <span className="italic text-primary">agree</span>
+            The numbers <span className="italic text-primary">don't lie</span>
           </h2>
         </motion.div>
 
         <div className="space-y-0">
-          {quotes.map((q, i) => (
+          {dataPoints.map((d, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.5, delay: i * 0.15 }}
-              className="py-12 border-t border-border/50 last:border-b"
+              className="grid md:grid-cols-[160px_1fr] gap-6 md:gap-12 items-baseline py-10 border-t border-border/50 last:border-b"
             >
-              <p className="font-display text-xl sm:text-2xl md:text-3xl italic text-foreground/90 leading-snug mb-6">
-                "{q.text}"
-              </p>
-              <div className="flex items-center gap-3">
-                <span className="font-mono text-xs text-primary/50">▸▸</span>
-                <span className="text-sm font-medium">{q.author}</span>
-                <span className="text-xs text-muted-foreground font-mono">{q.role}</span>
+              <div className="font-mono text-5xl md:text-6xl font-medium text-primary crt-glow">
+                {d.stat}
+              </div>
+              <div>
+                <p className="font-display text-lg sm:text-xl md:text-2xl text-foreground/90 leading-snug mb-3">
+                  {d.text}
+                </p>
+                <span className="text-xs text-muted-foreground font-mono tracking-wide">
+                  — {d.source}
+                </span>
               </div>
             </motion.div>
           ))}

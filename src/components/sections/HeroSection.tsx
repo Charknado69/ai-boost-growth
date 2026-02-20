@@ -34,17 +34,19 @@ const HeroSection = () => {
           </div>
 
           <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-medium leading-[1.05] tracking-tight mb-8 matrix-heading-glow">
-            AI is rewriting how customers{" "}
-            <span className="italic text-primary crt-glow">find</span> businesses
+            Your competitors are being{" "}
+            <span className="italic text-primary crt-glow">cited by ChatGPT</span>
+            . You're not.
           </h1>
 
           <p className="text-base sm:text-lg text-muted-foreground mb-14 max-w-2xl mx-auto leading-relaxed font-medium">
-            Traditional SEO won't save you. ChatGPT, Perplexity, and Google AI Overviews are
-            replacing search results with AI answers — and most businesses aren't in them.
+            ChatGPT, Perplexity, and Google AI Overviews have replaced the ten blue links.
+            Your buyers are getting AI answers — not browsing search results. Most brands
+            aren't in those answers. We fix that.
           </p>
 
           <div className="flex justify-center mb-5">
-            <EmailCapture buttonText=">>> Initialize Audit" />
+            <EmailCapture buttonText=">>> Get Free AI Audit" />
           </div>
 
           <p className="text-xs text-muted-foreground font-mono tracking-wide">

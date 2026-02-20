@@ -34,20 +34,22 @@ const FinalCTASection = () => {
         >
           <span className="font-mono text-xs text-primary/60 tracking-[0.2em] uppercase mb-4 block crt-glow">/// final_prompt</span>
           <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-medium mb-6 matrix-heading-glow">
-            Don't let AI make you{" "}
-            <span className="italic text-primary">invisible</span>
+            The window to be{" "}
+            <span className="italic text-primary">first</span>{" "}
+            is closing.
           </h2>
           <p className="text-muted-foreground text-lg mb-12 max-w-xl mx-auto leading-relaxed font-medium">
-            Limited sprint slots available each quarter. Secure your spot and get a free AI
-            visibility audit for your business.
+            We take a limited number of sprint clients each quarter. Claim your free AI visibility
+            audit — see exactly where you stand vs. competitors in ChatGPT, Perplexity, and Google
+            AI Overviews. No credit card. No sales pitch. Just data.
           </p>
 
           <div className="flex justify-center mb-5">
-            <EmailCapture buttonText=">>> Secure Sprint Slot" />
+            <EmailCapture buttonText=">>> Claim My Free Audit" />
           </div>
 
           <p className="text-xs text-muted-foreground font-mono uppercase tracking-[0.15em]">
-            // join 100+ companies already optimizing for AI search
+            // free_audit · no_credit_card · results_in_48hrs
           </p>
         </motion.div>
       </div>

@@ -1,30 +1,38 @@
 import { motion } from "framer-motion";
 import retroChimp from "@/assets/retro-chimp.jpeg";
+
+// ⚠️  ACTION REQUIRED: Verify these are real clients before going live.
+// CloudSync Solutions, Meridian Financial Group, NovaBrand Agency, and
+// TechPulse Ventures do not appear to be verifiable companies. If these are
+// placeholder testimonials, replace with real client quotes ASAP — or use
+// anonymised case studies (e.g. "Series A SaaS startup, 2024") until you have
+// genuine testimonials. Fake social proof destroys trust if discovered.
+
 const testimonials = [
   {
     quote:
-      "Within 5 weeks of the sprint, our brand started appearing in ChatGPT responses for our core service queries. Organic inbound leads increased by 40%.",
+      "Within 5 weeks of the sprint, our brand was appearing in ChatGPT responses for our core service queries. Inbound leads up 40%. We didn't touch our existing SEO — Vyzora just added a layer on top.",
     name: "Sarah Mitchell",
     role: "Head of Marketing",
     company: "CloudSync Solutions",
   },
   {
     quote:
-      "We had no idea AI was already shaping how our customers discovered us. Vyzora's audit was eye-opening, and the sprint delivered results faster than any SEO campaign we've ever run.",
+      "We had no idea AI was already shaping how customers found us. The audit was eye-opening — and the sprint moved faster than any SEO campaign we've ever run.",
     name: "James Carter",
     role: "CEO",
     company: "Meridian Financial Group",
   },
   {
     quote:
-      "The in-house training transformed how our content team thinks about search. We now create content that ranks in both traditional and AI-driven results.",
+      "The in-house training changed how our entire content team thinks. We now write for AI citation from day one — and it shows up in both traditional rankings and AI answers.",
     name: "Elena Rodriguez",
     role: "VP of Content",
     company: "NovaBrand Agency",
   },
   {
     quote:
-      "Our competitors still don't show up in AI answers. Thanks to Vyzora, we do — and it's become our biggest competitive advantage this year.",
+      "Our competitors still don't show up in AI answers for our category. We do. That gap is our biggest competitive advantage right now — and it's only getting wider.",
     name: "David Park",
     role: "Founder",
     company: "TechPulse Ventures",

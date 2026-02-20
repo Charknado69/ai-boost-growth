@@ -4,17 +4,17 @@ const steps = [
   {
     step: "01",
     title: "Audit",
-    description: "We analyze your current AI visibility — where you show up, where you don't, and where your competitors do.",
+    description: "We map your brand's presence across ChatGPT, Perplexity, Claude, and Google AI Overviews — then benchmark it against your top three competitors. You see exactly where you're missing, what they're winning, and what it's costing you.",
   },
   {
     step: "02",
     title: "Sprint",
-    description: "A focused 4–6 week engagement to optimize your content, structure, and authority for AI-generated answers.",
+    description: "Four to six weeks of focused execution. Content restructuring, entity optimization, authority building, and citation targeting. No fluff — just the actual work that gets your brand cited in AI answers.",
   },
   {
     step: "03",
     title: "Dominate",
-    description: "Your brand becomes the answer. We monitor, refine, and expand your AI presence for long-term dominance.",
+    description: "Your brand becomes the answer AI gives. We track citation growth weekly, monitor algorithm shifts across platforms, and expand your presence into new queries as AI search keeps evolving.",
   },
 ];
 
