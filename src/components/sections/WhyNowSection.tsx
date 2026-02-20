@@ -4,8 +4,8 @@ import EmailCapture from "@/components/EmailCapture";
 const timeline = [
   { year: "2023", event: "ChatGPT reaches 100M users in 60 days — the fastest product adoption in history. AI search goes mainstream overnight." },
   { year: "2024", event: "Google launches AI Overviews to 1B+ users globally. Organic click-through rates drop. The landscape shifts permanently." },
-  { year: "2025", event: "Perplexity, Copilot, and Claude reshape how buyers discover brands. AI-first discovery becomes the default for high-intent queries." },
-  { year: "2026", event: "Brands that didn't adapt face a compounding visibility gap. AI citations entrench early movers. Late adopters play catch-up." },
+  { year: "2025", event: "Perplexity, Copilot, and Claude enter the mainstream. Multiple AI platforms are now actively recommending brands to buyers. AI-first discovery becomes the default for every high-intent decision." },
+  { year: "2026", event: "Early movers own the AI answer space in their categories. Brands that waited are spending significantly more trying to claw back visibility. The gap compounds every quarter." },
 ];
 
 const WhyNowSection = () => {
@@ -24,7 +24,7 @@ const WhyNowSection = () => {
             Why <span className="italic text-primary">now</span>?
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed font-medium">
-            Early movers are locking in AI citations that will be exponentially harder to displace later. The category leaders are being decided right now.
+            The brands moving now are staking out AI citation positions that compound like backlinks once did — and become nearly impossible to displace. Your category's default recommendation in ChatGPT is being written this year.
           </p>
         </motion.div>
 

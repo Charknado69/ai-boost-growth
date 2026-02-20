@@ -40,9 +40,10 @@ const HeroSection = () => {
           </h1>
 
           <p className="text-base sm:text-lg text-muted-foreground mb-14 max-w-2xl mx-auto leading-relaxed font-medium">
-            ChatGPT, Perplexity, and Google AI Overviews have replaced the ten blue links.
-            Your buyers are getting AI answers — not browsing search results. Most brands
-            aren't in those answers. We fix that.
+            Your buyers ask ChatGPT, Perplexity, Gemini, and Claude who to hire, what
+            to buy, which brand to trust. These AI platforms give them an answer — with
+            names. Right now, your competitors are probably in those answers. You're not.
+            We change that.
           </p>
 
           <div className="flex justify-center mb-5">

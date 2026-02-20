@@ -2,16 +2,16 @@ import { motion } from "framer-motion";
 
 const stats = [
   {
-    stat: "40%",
-    label: "of Google searches now show AI Overviews — pushing your organic listings below the fold before users even see them.",
+    stat: "1 in 3",
+    label: "Google searches now shows an AI Overview — and growing. Your organic listing gets pushed below the fold before most users even scroll.",
   },
   {
-    stat: "–50%",
-    label: "average drop in organic click-through rate when an AI Overview appears. The answer absorbs the intent. Your listing gets skipped.",
+    stat: "–34%",
+    label: "average drop in organic click-through rate when an AI Overview appears, per Ahrefs' study of hundreds of thousands of keywords. Every AI answer is a lead your listing doesn't get.",
   },
   {
-    stat: "9 in 10",
-    label: "brands have zero presence in AI-generated answers. That's not a threat — it's your opening. Early movers lock in citations competitors can't easily take.",
+    stat: "64%",
+    label: "of consumers say they're inclined to purchase based on AI recommendations, per Omnisend's 2025 survey. If AI isn't recommending your brand, you're not in the conversation.",
   },
 ];
 

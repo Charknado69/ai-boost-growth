@@ -7,24 +7,24 @@ const services = [
     title: "AEO/GEO Sprint",
     duration: "4–6 weeks",
     description:
-      "We get your brand cited in ChatGPT, Perplexity, and Google AI Overviews — fast. A focused 4–6 week engagement: audit, restructure, optimize, and position. Built for ambitious brands that don't have time to wait.",
-    features: ["Full AI visibility audit", "Content restructuring for LLMs", "Entity & authority building", "Citation tracking & reporting"],
+      "We get your brand cited in ChatGPT, Perplexity, Gemini, and Google AI Overviews. Audit, restructure, optimize, position — four to six weeks from start to citation. No bloated retainers, no three-month strategy phase. Just execution.",
+    features: ["Full AI visibility audit", "Content editing for AI models", "Brand authority & trust building", "Citation tracking & reporting"],
   },
   {
     num: "02",
     title: "Retainer & Consulting",
     duration: "Ongoing",
     description:
-      "AI search is rewriting the rules every quarter. We stay on top of every shift so you stay cited while competitors scramble. Your dedicated AI visibility team — without the overhead.",
-    features: ["Monthly citation tracking", "Competitor monitoring", "Platform algorithm updates", "Quarterly strategy sessions"],
+      "AI search is rewriting the rules every quarter. We track every shift — algorithm changes, new platforms, emerging query patterns — so your citations hold while competitors scramble to keep up. Your dedicated AI visibility team. Without the salary, benefits, or office space.",
+    features: ["Monthly citation tracking", "Competitor monitoring", "Platform shift monitoring", "Quarterly strategy sessions"],
   },
   {
     num: "03",
     title: "In-House Training",
     duration: "Custom",
     description:
-      "We teach your team to build content that AI cites. Workshops, custom playbooks, and templates — everything they need to win in AI search independently. We build the capability. You own it.",
-    features: ["Full-day team workshops", "Custom AEO/GEO playbooks", "Content templates & SOPs", "Post-training support calls"],
+      "We don't run your AI search and send you a monthly PDF. We teach your team to own it. Full-day workshops, custom playbooks built for your industry, templates they use from day one. The knowledge stays with you long after the engagement ends.",
+    features: ["Full-day team workshops", "Custom AEO/GEO playbooks", "Content templates & workflows", "Post-training support calls"],
   },
 ];
 
@@ -49,7 +49,7 @@ const ServicesSection = () => {
             What we <span className="italic text-primary">do</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed font-medium">
-            Sprint-based engagements designed for speed and measurable results.
+            Three ways to work with us. All built for speed and results you can actually measure.
           </p>
         </motion.div>
 

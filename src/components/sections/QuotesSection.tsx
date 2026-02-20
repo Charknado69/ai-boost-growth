@@ -6,19 +6,19 @@ import { motion } from "framer-motion";
 
 const dataPoints = [
   {
-    stat: "–50%",
-    text: "Drop in organic click-through rate when a Google AI Overview appears in results. The AI answer absorbs the intent before users ever reach your listing.",
-    source: "Ahrefs & SearchEngineLand, 2024",
+    stat: "35%",
+    text: "More organic clicks earned by brands cited in AI Overviews compared to those that aren't — plus 91% more paid clicks. Being cited doesn't just protect your traffic. It actively grows it.",
+    source: "Seer Interactive — 25M impressions across 42 organisations, 2024–2025",
   },
   {
-    stat: "3.5×",
-    text: "More likely to be cited in AI-generated answers if your content is structured with clear, direct responses. Formatting is the new backlink.",
-    source: "Princeton University & Georgia Tech — GEO Study, 2023",
+    stat: "15.9%",
+    text: "Conversion rate for visitors referred by ChatGPT, versus 1.76% from Google organic. AI sends fewer clicks — but the people who arrive are already sold on the recommendation.",
+    source: "SE Ranking, 2025",
   },
   {
-    stat: "100M+",
-    text: "Daily queries processed by ChatGPT alone. The majority of those users never click through to a website. Your brand needs to be the answer — not just in the results.",
-    source: "OpenAI / Reuters, 2024",
+    stat: "12%",
+    text: "Of URLs cited by ChatGPT, Perplexity, and Copilot rank in Google's top 10. AI citations and Google rankings are almost entirely separate. What your SEO agency is doing has almost no bearing on your AI visibility.",
+    source: "SE Ranking / Ahrefs, 2025",
   },
 ];
 

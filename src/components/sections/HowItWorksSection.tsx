@@ -9,7 +9,7 @@ const steps = [
   {
     step: "02",
     title: "Sprint",
-    description: "Four to six weeks of focused execution. Content restructuring, entity optimization, authority building, and citation targeting. No fluff — just the actual work that gets your brand cited in AI answers.",
+    description: "Four to six weeks of focused execution. Content editing for AI citation, authority building, and citation targeting. No fluff — just the actual work that gets your brand cited in AI answers.",
   },
   {
     step: "03",
