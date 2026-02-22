@@ -3,7 +3,7 @@ import HeroSection from "@/components/sections/HeroSection";
 import ProblemSection from "@/components/sections/ProblemSection";
 import ServicesSection from "@/components/sections/ServicesSection";
 import QuotesSection from "@/components/sections/QuotesSection";
-import AuditPreviewSection from "@/components/sections/AuditPreviewSection";
+import AuditPreviewClean from "@/components/sections/AuditPreviewClean";
 import WhyNowSection from "@/components/sections/WhyNowSection";
 import HowItWorksSection from "@/components/sections/HowItWorksSection";
 import FinalCTASection from "@/components/sections/FinalCTASection";
@@ -17,7 +17,7 @@ const Index = () => {
       <ProblemSection />
       <ServicesSection />
       <QuotesSection />
-      <AuditPreviewSection />
+      <AuditPreviewClean />
       <WhyNowSection />
       <HowItWorksSection />
       <FinalCTASection />
