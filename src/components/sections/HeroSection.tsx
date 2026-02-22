@@ -69,8 +69,6 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
-            <span className="section-label mb-6 block">AEO & GEO Agency</span>
-
             <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl leading-[1.05] tracking-tight mb-6">
               Your buyers ask AI who to hire.{" "}
               <em className="text-primary not-italic" style={{ fontStyle: "italic" }}>
