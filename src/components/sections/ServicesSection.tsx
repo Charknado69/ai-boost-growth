@@ -49,8 +49,8 @@ const ServicesSection = () => {
             <em style={{ fontStyle: "italic" }}>win AI search.</em>
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            Built for B2B companies whose buyers research vendors on AI platforms before
-            ever speaking to sales. All engagements start with a free audit.
+            For any business whose customers use AI to research before they buy.
+            All engagements start with a free audit.
           </p>
         </motion.div>
 
