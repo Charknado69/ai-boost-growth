@@ -9,7 +9,7 @@ const Footer = () => {
               Vyzora<span className="text-primary">.</span>
             </a>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
-              AEO & GEO optimization for B2B brands who want to be recommended by AI —
+              AEO & GEO for brands who want to be recommended by AI —
               not just ranked by Google.
             </p>
           </div>

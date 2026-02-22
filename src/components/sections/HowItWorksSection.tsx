@@ -11,7 +11,7 @@ const steps = [
     step: "02",
     title: "Strategise",
     description:
-      "We build a custom AEO/GEO roadmap based on your market, your competitors, and the specific queries your buyers are already asking AI platforms. No generic playbooks.",
+      "We build a custom AEO/GEO roadmap based on your market, your competitors, and the specific queries your customers are already asking AI. No generic playbooks.",
   },
   {
     step: "03",

@@ -70,15 +70,16 @@ const HeroSection = () => {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
             <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl leading-[1.05] tracking-tight mb-6">
-              Your buyers ask AI who to hire.{" "}
+              Your customers ask AI what to buy.{" "}
               <em className="text-primary not-italic" style={{ fontStyle: "italic" }}>
-                Make sure they hear your name.
+                Make sure your brand is the answer.
               </em>
             </h1>
 
             <p className="text-base sm:text-lg text-muted-foreground mb-10 leading-relaxed max-w-lg">
-              ChatGPT, Perplexity, Claude, and Gemini recommend brands to your buyers
-              every day. We get your brand into those answers — and keep it there.
+              ChatGPT, Perplexity, Claude, and Gemini recommend brands every day —
+              before your customers ever visit your website. We get your brand into
+              those answers and keep it there.
             </p>
 
             <div className="mb-8">
@@ -119,7 +120,7 @@ const HeroSection = () => {
           className="mt-20 pt-8 border-t border-border/40 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-0 sm:divide-x divide-border/40"
         >
           {[
-            { stat: "64%", label: "of buyers act on AI recommendations" },
+            { stat: "64%", label: "of people act on AI recommendations" },
             { stat: "35%", label: "more clicks for AI-cited brands" },
             { stat: "48h", label: "audit delivered, no commitment" },
           ].map((item) => (

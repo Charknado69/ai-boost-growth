@@ -20,7 +20,7 @@ const deliverables = [
     number: "03",
     title: "Gap & Opportunity Map",
     description:
-      "We identify the specific queries where your buyers are asking for recommendations — and where you're invisible. These are your highest-value AI search opportunities.",
+      "We identify the specific queries where your customers are searching for recommendations — and where you're invisible. These are your highest-value AI search opportunities.",
     outcome: "You have a prioritised list of where to focus first.",
   },
   {

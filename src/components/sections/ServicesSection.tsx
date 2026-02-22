@@ -13,14 +13,14 @@ const services = [
     icon: TrendingUp,
     title: "Answer Engine Optimisation",
     description:
-      "We restructure your content so AI platforms surface your brand in direct answers to your buyers' questions — featured snippets, knowledge panels, and AI Overviews. Includes schema markup, structured Q&A, and technical optimisation.",
+      "We restructure your content so AI platforms surface your brand in direct answers to your customers' questions — featured snippets, knowledge panels, and AI Overviews. Includes schema markup, structured Q&A, and technical optimisation.",
     detail: "4–6 week sprint.",
   },
   {
     icon: BookOpen,
     title: "Generative Engine Optimisation",
     description:
-      "We build your brand's credibility across the sources AI models trust — so when a buyer asks Perplexity or ChatGPT for a recommendation, your name comes up. Strategy covers all major AI platforms simultaneously.",
+      "We build your brand's credibility across the sources AI models trust — so when someone asks Perplexity or ChatGPT for a recommendation, your name comes up. Strategy covers all major AI platforms simultaneously.",
     detail: "Ongoing retainer.",
   },
   {

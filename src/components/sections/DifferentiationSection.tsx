@@ -46,7 +46,7 @@ const DifferentiationSection = () => {
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed max-w-xl">
             Most agencies optimise for Google's algorithm. We optimise for what happens
-            after the search — when AI decides who to recommend to your buyer.
+            after the search — when AI decides what to recommend to your customer.
           </p>
         </motion.div>
 

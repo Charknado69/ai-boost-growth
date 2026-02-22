@@ -15,7 +15,7 @@ const timeline = [
   {
     year: "2025",
     event:
-      "Perplexity, Copilot, and Claude enter the mainstream. Multiple AI platforms are now actively recommending brands to buyers. AI-first discovery becomes the default for every high-intent decision.",
+      "Perplexity, Copilot, and Claude enter the mainstream. Multiple AI platforms are now actively recommending brands to customers. AI-first discovery becomes the default for every high-intent purchase decision.",
   },
   {
     year: "2026",
