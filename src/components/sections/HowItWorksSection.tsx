@@ -17,13 +17,13 @@ const steps = [
     step: "03",
     title: "Execute",
     description:
-      "Four to six weeks of focused work: content optimisation for AI citation, entity building, schema markup, and authority signals. No strategy decks — just the execution.",
+      "Four to six weeks of focused execution: rewriting your content for AI citation, technical markup, and building authority across the sources AI models trust. No strategy decks.",
   },
   {
     step: "04",
     title: "Measure",
     description:
-      "We track citation growth weekly and give you a clear monthly view of your brand's AI visibility versus competitors. As the landscape shifts, we keep you ahead of it.",
+      "We track citation growth weekly, benchmark your brand against competitors monthly, and flag every meaningful platform shift. AI search changes fast — you'll never be caught off guard.",
   },
 ];
 
@@ -40,8 +40,8 @@ const HowItWorksSection = () => {
         >
           <span className="section-label mb-5 block">Process</span>
           <h2 className="font-display text-4xl sm:text-5xl md:text-6xl leading-tight">
-            A proven process.{" "}
-            <em style={{ fontStyle: "italic" }}>Measurable results.</em>
+            A clear process.{" "}
+            <em style={{ fontStyle: "italic" }}>Results you can measure.</em>
           </h2>
         </motion.div>
 

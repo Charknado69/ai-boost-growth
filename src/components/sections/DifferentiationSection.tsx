@@ -40,10 +40,14 @@ const DifferentiationSection = () => {
           className="mb-16"
         >
           <span className="section-label mb-5 block">Why Vyzora</span>
-          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl leading-tight max-w-2xl">
+          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl leading-tight max-w-2xl mb-6">
             Not your typical{" "}
             <em style={{ fontStyle: "italic" }}>SEO agency.</em>
           </h2>
+          <p className="text-muted-foreground text-lg leading-relaxed max-w-xl">
+            Most agencies optimise for Google's algorithm. We optimise for what happens
+            after the search — when AI decides who to recommend to your buyer.
+          </p>
         </motion.div>
 
         {/* Comparison table */}

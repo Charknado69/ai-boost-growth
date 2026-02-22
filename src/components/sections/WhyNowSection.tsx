@@ -20,7 +20,7 @@ const timeline = [
   {
     year: "2026",
     event:
-      "Brands that moved early are building durable AI visibility advantages. Those that haven't started are facing a steeper climb — and a more crowded space.",
+      "Brands that moved early are compounding their advantage — cited more often, recommended more confidently, harder to displace. Those that waited are starting from zero in a market that's already picked its favourites.",
   },
 ];
 
@@ -42,8 +42,8 @@ const WhyNowSection = () => {
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed max-w-xl">
             Brands moving now are staking out AI citation positions that compound like
-            backlinks once did — and become nearly impossible to displace. Your category's
-            default recommendation in ChatGPT is being written this year.
+            backlinks once did — and become nearly impossible to displace. Every month
+            you wait, a competitor gets cited in your place.
           </p>
         </motion.div>
 

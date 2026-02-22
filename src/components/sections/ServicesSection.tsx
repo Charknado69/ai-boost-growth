@@ -13,14 +13,14 @@ const services = [
     icon: TrendingUp,
     title: "Answer Engine Optimisation",
     description:
-      "We restructure your content for zero-click visibility: featured snippets, knowledge panels, voice search, and AI Overviews. Schema markup, entity optimisation, and FAQ architecture included.",
+      "We restructure your content so AI platforms surface your brand in direct answers to your buyers' questions — featured snippets, knowledge panels, and AI Overviews. Includes schema markup, structured Q&A, and technical optimisation.",
     detail: "4–6 week sprint.",
   },
   {
     icon: BookOpen,
     title: "Generative Engine Optimisation",
     description:
-      "We build the semantic authority and topical depth that causes generative AI models to cite and recommend your brand. Cross-platform citation strategy across all major AI platforms.",
+      "We build your brand's credibility across the sources AI models trust — so when a buyer asks Perplexity or ChatGPT for a recommendation, your name comes up. Strategy covers all major AI platforms simultaneously.",
     detail: "Ongoing retainer.",
   },
   {
@@ -50,7 +50,7 @@ const ServicesSection = () => {
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
             Built for B2B companies whose buyers research vendors on AI platforms before
-            ever speaking to sales.
+            ever speaking to sales. All engagements start with a free audit.
           </p>
         </motion.div>
 
