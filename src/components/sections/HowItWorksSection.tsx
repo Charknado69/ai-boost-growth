@@ -45,6 +45,11 @@ const HowItWorksSection = () => {
           </h2>
         </motion.div>
 
+        {/* Connecting amber line — spans full width above steps */}
+        <div className="hidden md:block mb-0">
+          <div className="amber-line" />
+        </div>
+
         {/* Steps — horizontal on desktop */}
         <div className="grid md:grid-cols-4 gap-0">
           {steps.map((s, i) => (
@@ -56,15 +61,12 @@ const HowItWorksSection = () => {
               transition={{ duration: 0.6, delay: i * 0.12, ease: [0.16, 1, 0.3, 1] }}
               className="px-0 md:px-8 py-10 first:pl-0 last:pr-0 border-t md:border-t-0 md:border-l border-border/40 first:border-l-0 first:border-t-0"
             >
-              <p className="font-display text-5xl gold-accent mb-5">{s.step}</p>
+              <p className="font-display text-6xl gold-accent mb-6 leading-none">{s.step}</p>
               <h3 className="font-display text-xl mb-3">{s.title}</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">{s.description}</p>
             </motion.div>
           ))}
         </div>
-
-        {/* Connecting line — desktop only */}
-        <div className="hidden md:block mt-0 amber-line" />
       </div>
     </section>
   );

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import EmailCapture from "@/components/EmailCapture";
 
-// Abstract SVG citation network — animated nodes and arcs in amber/gold
+// Abstract SVG citation network — amber nodes representing AI platforms citing your brand
 const CitationGraph = () => (
   <svg
     viewBox="0 0 520 420"
@@ -10,42 +10,43 @@ const CitationGraph = () => (
     className="w-full h-full"
     aria-hidden="true"
   >
-    {/* Connecting arcs */}
-    <path d="M120 210 Q260 80 390 150" stroke="hsl(41 91% 44% / 0.18)" strokeWidth="1" />
-    <path d="M120 210 Q200 320 340 310" stroke="hsl(41 91% 44% / 0.12)" strokeWidth="1" />
-    <path d="M390 150 Q430 240 340 310" stroke="hsl(41 91% 44% / 0.15)" strokeWidth="1" />
-    <path d="M390 150 Q460 100 470 180" stroke="hsl(41 91% 44% / 0.10)" strokeWidth="1" />
-    <path d="M120 210 Q80 140 100 80" stroke="hsl(41 91% 44% / 0.10)" strokeWidth="1" />
-    <path d="M260 200 Q260 280 340 310" stroke="hsl(41 91% 44% / 0.12)" strokeWidth="1" />
-    <path d="M260 200 Q320 170 390 150" stroke="hsl(41 91% 44% / 0.20)" strokeWidth="1.5" />
+    {/* Connecting arcs — stronger opacity */}
+    <path d="M120 210 Q260 80 390 150" stroke="hsl(41 91% 44% / 0.35)" strokeWidth="1.5" />
+    <path d="M120 210 Q200 320 340 310" stroke="hsl(41 91% 44% / 0.22)" strokeWidth="1" />
+    <path d="M390 150 Q430 240 340 310" stroke="hsl(41 91% 44% / 0.28)" strokeWidth="1" />
+    <path d="M390 150 Q460 100 470 180" stroke="hsl(41 91% 44% / 0.20)" strokeWidth="1" />
+    <path d="M120 210 Q80 140 100 80" stroke="hsl(41 91% 44% / 0.20)" strokeWidth="1" />
+    <path d="M260 200 Q260 280 340 310" stroke="hsl(41 91% 44% / 0.22)" strokeWidth="1" />
+    <path d="M260 200 Q320 170 390 150" stroke="hsl(41 91% 44% / 0.40)" strokeWidth="2" />
 
     {/* Outer nodes */}
-    <circle cx="100" cy="80" r="5" fill="hsl(41 91% 44% / 0.25)" />
-    <circle cx="470" cy="180" r="6" fill="hsl(41 91% 44% / 0.20)" />
-    <circle cx="340" cy="310" r="7" fill="hsl(41 91% 44% / 0.22)" />
-    <circle cx="70" cy="300" r="4" fill="hsl(41 91% 44% / 0.15)" />
+    <circle cx="100" cy="80" r="6" fill="hsl(41 91% 44% / 0.40)" />
+    <circle cx="470" cy="180" r="7" fill="hsl(41 91% 44% / 0.35)" />
+    <circle cx="340" cy="310" r="8" fill="hsl(41 91% 44% / 0.38)" />
+    <circle cx="70" cy="300" r="5" fill="hsl(41 91% 44% / 0.25)" />
 
     {/* Secondary nodes */}
-    <circle cx="120" cy="210" r="10" fill="hsl(41 91% 44% / 0.15)" />
-    <circle cx="120" cy="210" r="4" fill="hsl(41 91% 44% / 0.50)" />
+    <circle cx="120" cy="210" r="14" fill="hsl(41 91% 44% / 0.12)" />
+    <circle cx="120" cy="210" r="6" fill="hsl(41 91% 44% / 0.60)" />
 
-    <circle cx="260" cy="200" r="12" fill="hsl(41 91% 44% / 0.12)" />
-    <circle cx="260" cy="200" r="5" fill="hsl(41 91% 44% / 0.45)" />
+    <circle cx="260" cy="200" r="16" fill="hsl(41 91% 44% / 0.10)" />
+    <circle cx="260" cy="200" r="7" fill="hsl(41 91% 44% / 0.55)" />
 
-    {/* Primary node — "Your Brand" */}
-    <circle cx="390" cy="150" r="22" fill="hsl(41 91% 44% / 0.10)" className="animate-[node-pulse_3s_ease-in-out_infinite]" />
-    <circle cx="390" cy="150" r="14" fill="hsl(41 91% 44% / 0.18)" />
-    <circle cx="390" cy="150" r="6" fill="hsl(41 91% 44% / 0.80)" />
+    {/* Primary node — "Your Brand" — pulsing outer ring */}
+    <circle cx="370" cy="150" r="36" fill="hsl(41 91% 44% / 0.06)" className="animate-[node-pulse_3s_ease-in-out_infinite]" />
+    <circle cx="370" cy="150" r="24" fill="hsl(41 91% 44% / 0.12)" />
+    <circle cx="370" cy="150" r="14" fill="hsl(41 91% 44% / 0.25)" />
+    <circle cx="370" cy="150" r="7" fill="hsl(41 91% 44% / 0.90)" />
 
     {/* Platform labels */}
-    <text x="88" y="76" fill="hsl(38 53% 93% / 0.35)" fontSize="9" fontFamily="DM Sans, sans-serif">ChatGPT</text>
-    <text x="452" y="177" fill="hsl(38 53% 93% / 0.30)" fontSize="9" fontFamily="DM Sans, sans-serif">Perplexity</text>
-    <text x="320" y="330" fill="hsl(38 53% 93% / 0.30)" fontSize="9" fontFamily="DM Sans, sans-serif">Gemini</text>
-    <text x="95" y="228" fill="hsl(38 53% 93% / 0.28)" fontSize="9" fontFamily="DM Sans, sans-serif">Claude</text>
-    <text x="233" y="217" fill="hsl(38 53% 93% / 0.28)" fontSize="8" fontFamily="DM Sans, sans-serif">AI Overview</text>
+    <text x="86" y="72" fill="hsl(38 53% 93% / 0.50)" fontSize="10" fontFamily="DM Sans, sans-serif">ChatGPT</text>
+    <text x="446" y="175" fill="hsl(38 53% 93% / 0.45)" fontSize="10" fontFamily="DM Sans, sans-serif">Perplexity</text>
+    <text x="316" y="334" fill="hsl(38 53% 93% / 0.45)" fontSize="10" fontFamily="DM Sans, sans-serif">Gemini</text>
+    <text x="92" y="232" fill="hsl(38 53% 93% / 0.45)" fontSize="10" fontFamily="DM Sans, sans-serif">Claude</text>
+    <text x="228" y="218" fill="hsl(38 53% 93% / 0.42)" fontSize="9" fontFamily="DM Sans, sans-serif">AI Overview</text>
 
-    {/* "Your Brand" label */}
-    <text x="408" y="154" fill="hsl(41 91% 44% / 0.90)" fontSize="10" fontWeight="500" fontFamily="DM Sans, sans-serif">Your Brand</text>
+    {/* "Your Brand" label — below node with amber colour */}
+    <text x="348" y="200" fill="hsl(41 91% 44% / 0.95)" fontSize="11" fontWeight="600" fontFamily="DM Sans, sans-serif">Your Brand</text>
   </svg>
 );
 
@@ -54,9 +55,9 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       {/* Warm ambient glow */}
       <div
-        className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[700px] h-[500px] rounded-full pointer-events-none"
+        className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[800px] h-[600px] rounded-full pointer-events-none"
         style={{
-          background: "radial-gradient(ellipse at center, hsl(41 91% 44% / 0.07) 0%, transparent 70%)",
+          background: "radial-gradient(ellipse at center, hsl(41 91% 44% / 0.09) 0%, transparent 65%)",
         }}
       />
 
@@ -103,9 +104,9 @@ const HeroSection = () => {
           >
             {/* Glow behind SVG */}
             <div
-              className="absolute inset-0 rounded-3xl pointer-events-none"
+              className="absolute inset-0 pointer-events-none"
               style={{
-                background: "radial-gradient(ellipse at 60% 40%, hsl(41 91% 44% / 0.08) 0%, transparent 65%)",
+                background: "radial-gradient(ellipse at 55% 38%, hsl(41 91% 44% / 0.12) 0%, transparent 60%)",
               }}
             />
             <CitationGraph />
@@ -125,7 +126,7 @@ const HeroSection = () => {
             { stat: "48h", label: "audit delivered, no commitment" },
           ].map((item) => (
             <div key={item.stat} className="sm:px-8 first:pl-0 last:pr-0 text-center sm:text-left">
-              <p className="font-display text-3xl gold-accent mb-1">{item.stat}</p>
+              <p className="font-display text-4xl gold-accent mb-1">{item.stat}</p>
               <p className="text-xs text-muted-foreground leading-snug">{item.label}</p>
             </div>
           ))}

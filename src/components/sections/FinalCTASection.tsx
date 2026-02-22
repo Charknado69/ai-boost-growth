@@ -4,14 +4,17 @@ import EmailCapture from "@/components/EmailCapture";
 const FinalCTASection = () => {
   return (
     <section className="py-32 px-6 relative overflow-hidden bg-card">
-      {/* Warm radial glow */}
+      {/* Ambient glow — centred and visible */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse at 50% 100%, hsl(41 91% 44% / 0.10) 0%, transparent 60%)",
+            "radial-gradient(ellipse at 50% 60%, hsl(41 91% 44% / 0.14) 0%, hsl(41 91% 44% / 0.04) 45%, transparent 70%)",
         }}
       />
+
+      {/* Subtle top border accent */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
 
       <div className="container max-w-3xl mx-auto relative z-10 text-center">
         <motion.div

@@ -54,7 +54,7 @@ const ServicesSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-4">
+        <div className="grid md:grid-cols-2 gap-6">
           {services.map((service, i) => {
             const Icon = service.icon;
             return (
@@ -64,18 +64,20 @@ const ServicesSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-80px" }}
                 transition={{ duration: 0.6, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
-                className="premium-card p-8 flex flex-col gap-5 group"
+                className="premium-card p-8 flex flex-col gap-6 hover:border-primary/25 transition-colors duration-300"
               >
-                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                  <Icon size={18} className="text-primary" strokeWidth={1.5} />
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                  <Icon size={20} className="text-primary" strokeWidth={1.5} />
                 </div>
 
-                <div>
+                <div className="flex-1">
                   <h3 className="font-display text-2xl mb-3">{service.title}</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
                 </div>
 
-                <p className="text-xs text-primary/70 font-sans mt-auto">{service.detail}</p>
+                <div className="flex items-center justify-between pt-2 border-t border-border/40">
+                  <p className="text-xs text-primary/70 font-sans">{service.detail}</p>
+                </div>
               </motion.div>
             );
           })}

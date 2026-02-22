@@ -14,7 +14,7 @@ const rows = [
   {
     topic: "Content approach",
     traditional: "Keyword density & backlinks",
-    vyzora: "Semantic authority, entity optimisation, structured data for AI crawlers",
+    vyzora: "Credibility-building, topical depth, structured data for AI models",
   },
   {
     topic: "Platform scope",
@@ -61,13 +61,11 @@ const DifferentiationSection = () => {
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-border/60">
-                <th className="text-left py-4 pr-8 text-muted-foreground font-sans font-medium text-xs uppercase tracking-wider w-40">
-                  &nbsp;
-                </th>
-                <th className="text-left py-4 pr-8 text-muted-foreground font-sans font-medium text-xs uppercase tracking-wider">
+                <th className="text-left py-4 pr-8 w-36" />
+                <th className="text-left py-4 pr-8 text-muted-foreground/60 font-sans font-medium text-xs uppercase tracking-wider">
                   Traditional SEO Agency
                 </th>
-                <th className="text-left py-4 font-sans font-medium text-xs uppercase tracking-wider text-primary/80">
+                <th className="text-left py-4 pl-6 font-sans font-medium text-xs uppercase tracking-wider text-primary border-l-2 border-primary/40">
                   Vyzora AEO/GEO
                 </th>
               </tr>
@@ -82,13 +80,13 @@ const DifferentiationSection = () => {
                   transition={{ duration: 0.4, delay: i * 0.07 }}
                   className="border-t border-border/40"
                 >
-                  <td className="py-5 pr-8 text-muted-foreground/60 font-sans text-xs uppercase tracking-wide align-top whitespace-nowrap">
+                  <td className="py-5 pr-8 text-muted-foreground/50 font-sans text-xs uppercase tracking-wide align-top whitespace-nowrap">
                     {row.topic}
                   </td>
-                  <td className="py-5 pr-8 text-muted-foreground align-top">
+                  <td className="py-5 pr-8 text-muted-foreground/70 align-top">
                     {row.traditional}
                   </td>
-                  <td className="py-5 text-foreground/90 font-sans align-top">
+                  <td className="py-5 pl-6 text-foreground font-sans font-medium align-top border-l-2 border-primary/20">
                     {row.vyzora}
                   </td>
                 </motion.tr>
