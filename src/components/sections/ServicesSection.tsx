@@ -1,84 +1,84 @@
 import { motion } from "framer-motion";
-import retroKeyboard from "@/assets/retro-keyboard.jpeg";
+import { Search, TrendingUp, BarChart3, BookOpen } from "lucide-react";
 
 const services = [
   {
-    num: "01",
-    title: "AEO/GEO Sprint",
-    duration: "4–6 weeks",
+    icon: Search,
+    title: "AI Visibility Audit",
     description:
-      "We get your brand cited in ChatGPT, Perplexity, Gemini, and Google AI Overviews. Audit, restructure, optimize, position — four to six weeks from start to citation. No bloated retainers, no three-month strategy phase. Just execution.",
-    features: ["Full AI visibility audit", "Content editing for AI models", "Brand authority & trust building", "Citation tracking & reporting"],
+      "A comprehensive scan of how your brand appears — or doesn't — across ChatGPT, Perplexity, Claude, Gemini, and Google AI Overviews. Benchmarked against your top competitors.",
+    detail: "Free to start. Delivered in 48 hours.",
   },
   {
-    num: "02",
-    title: "Retainer & Consulting",
-    duration: "Ongoing",
+    icon: TrendingUp,
+    title: "Answer Engine Optimisation",
     description:
-      "AI search is rewriting the rules every quarter. We track every shift — algorithm changes, new platforms, emerging query patterns — so your citations hold while competitors scramble to keep up. Your dedicated AI visibility team. Without the salary, benefits, or office space.",
-    features: ["Monthly citation tracking", "Competitor monitoring", "Platform shift monitoring", "Quarterly strategy sessions"],
+      "We restructure your content for zero-click visibility: featured snippets, knowledge panels, voice search, and AI Overviews. Schema markup, entity optimisation, and FAQ architecture included.",
+    detail: "4–6 week sprint.",
   },
   {
-    num: "03",
-    title: "In-House Training",
-    duration: "Custom",
+    icon: BookOpen,
+    title: "Generative Engine Optimisation",
     description:
-      "We don't run your AI search and send you a monthly PDF. We teach your team to own it. Full-day workshops, custom playbooks built for your industry, templates they use from day one. The knowledge stays with you long after the engagement ends.",
-    features: ["Full-day team workshops", "Custom AEO/GEO playbooks", "Content templates & workflows", "Post-training support calls"],
+      "We build the semantic authority and topical depth that causes generative AI models to cite and recommend your brand. Cross-platform citation strategy across all major AI platforms.",
+    detail: "Ongoing retainer.",
+  },
+  {
+    icon: BarChart3,
+    title: "Citation Monitoring & Reporting",
+    description:
+      "Track exactly how and where AI platforms reference your brand each month. Citation growth, share of voice against competitors, and clear reporting your leadership team will understand.",
+    detail: "Monthly reporting.",
   },
 ];
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="py-32 px-6 relative overflow-hidden">
-      {/* Background accent image */}
-      <div className="absolute inset-0">
-        <img src={retroKeyboard} alt="" className="w-full h-full object-cover opacity-[0.08]" />
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background" />
-      </div>
-      <div className="container max-w-5xl mx-auto relative z-10">
+    <section id="services" className="py-32 px-6">
+      <div className="container max-w-6xl mx-auto">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-20"
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+          className="max-w-xl mb-16"
         >
-          <span className="font-mono text-xs text-primary/60 tracking-[0.2em] uppercase mb-4 block crt-glow">/// services.init()</span>
-          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-medium mb-6 matrix-heading-glow">
-            What we <span className="italic text-primary">do</span>
+          <span className="section-label mb-5 block">Services</span>
+          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl leading-tight mb-6">
+            Everything you need to{" "}
+            <em style={{ fontStyle: "italic" }}>win AI search.</em>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed font-medium">
-            Three ways to work with us. All built for speed and results you can actually measure.
+          <p className="text-muted-foreground text-lg leading-relaxed">
+            Built for B2B companies whose buyers research vendors on AI platforms before
+            ever speaking to sales.
           </p>
         </motion.div>
 
-        <div className="space-y-0">
-          {services.map((service, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.5, delay: i * 0.15 }}
-              className="grid md:grid-cols-[100px_1fr_1fr] gap-6 md:gap-10 py-10 border-t border-border/50 last:border-b items-start"
-            >
-              <span className="font-mono text-5xl font-medium text-primary/30 crt-glow">{service.num}</span>
-              <div>
-                <h3 className="font-display text-2xl font-medium mb-1">{service.title}</h3>
-                <span className="text-xs text-primary font-mono uppercase tracking-[0.2em]">{service.duration}</span>
-                <p className="text-muted-foreground mt-4 text-sm leading-relaxed">{service.description}</p>
-              </div>
-              <ul className="space-y-2 md:pt-1">
-                {service.features.map((f, j) => (
-                  <li key={j} className="text-sm text-foreground/70 flex items-center gap-3 font-mono">
-                    <span className="text-primary/50 text-xs">▸</span>
-                    {f}
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-          ))}
+        <div className="grid md:grid-cols-2 gap-4">
+          {services.map((service, i) => {
+            const Icon = service.icon;
+            return (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{ duration: 0.6, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
+                className="premium-card p-8 flex flex-col gap-5 group"
+              >
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <Icon size={18} className="text-primary" strokeWidth={1.5} />
+                </div>
+
+                <div>
+                  <h3 className="font-display text-2xl mb-3">{service.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
+                </div>
+
+                <p className="text-xs text-primary/70 font-sans mt-auto">{service.detail}</p>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>

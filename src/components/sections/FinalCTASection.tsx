@@ -1,56 +1,44 @@
 import { motion } from "framer-motion";
 import EmailCapture from "@/components/EmailCapture";
-import retroCrt from "@/assets/retro-crt.jpeg";
 
 const FinalCTASection = () => {
   return (
-    <section className="py-32 px-6 relative overflow-hidden">
-      <div className="container max-w-3xl mx-auto relative z-10">
-        {/* CRT image as a visible design element, blended into background */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.7 }}
-          className="flex justify-center mb-14"
-        >
-          <div className="relative w-[320px] sm:w-[400px] md:w-[480px] aspect-[4/3] overflow-hidden">
-            <img
-              src={retroCrt}
-              alt="Retro CRT monitor"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/40" />
-            <div className="absolute inset-0 bg-gradient-to-r from-background/50 via-transparent to-background/50" />
-          </div>
-        </motion.div>
+    <section className="py-32 px-6 relative overflow-hidden bg-card">
+      {/* Warm radial glow */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background:
+            "radial-gradient(ellipse at 50% 100%, hsl(41 91% 44% / 0.10) 0%, transparent 60%)",
+        }}
+      />
 
+      <div className="container max-w-3xl mx-auto relative z-10 text-center">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6, delay: 0.15 }}
-          className="text-center"
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
         >
-          <span className="font-mono text-xs text-primary/60 tracking-[0.2em] uppercase mb-4 block crt-glow">/// final_prompt</span>
-          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-medium mb-6 matrix-heading-glow">
+          <span className="section-label mb-6 block">Get started</span>
+          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl leading-tight mb-6">
             The window to be{" "}
-            <span className="italic text-primary">first</span>{" "}
+            <em style={{ fontStyle: "italic" }} className="text-primary">first</em>{" "}
             is closing.
           </h2>
-          <p className="text-muted-foreground text-lg mb-12 max-w-xl mx-auto leading-relaxed font-medium">
-            We limit sprint intake to keep quality high. Claim your free audit and find out exactly
-            where you stand — you'll get a clear breakdown of your brand's citations across ChatGPT,
-            Perplexity, and Google AI Overviews, benchmarked against your top competitors. No credit
-            card. No sales call unless you want one. Just clarity.
+          <p className="text-muted-foreground text-lg mb-12 max-w-xl mx-auto leading-relaxed">
+            Claim your free audit and find out exactly where you stand — a clear breakdown
+            of your brand's citations across ChatGPT, Perplexity, and Google AI Overviews,
+            benchmarked against your top competitors. No credit card. No sales call unless
+            you want one. Just clarity.
           </p>
 
-          <div className="flex justify-center mb-5">
-            <EmailCapture buttonText=">>> Claim My Free Audit" />
+          <div className="flex justify-center mb-6">
+            <EmailCapture buttonText="Claim My Free Audit" />
           </div>
 
-          <p className="text-xs text-muted-foreground font-mono uppercase tracking-[0.15em]">
-            // free_audit · no_credit_card · results_in_48hrs
+          <p className="text-xs text-muted-foreground font-sans">
+            Free audit · No credit card · Results in 48 hours
           </p>
         </motion.div>
       </div>

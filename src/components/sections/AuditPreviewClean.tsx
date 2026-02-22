@@ -1,10 +1,6 @@
 import { motion } from "framer-motion";
 import EmailCapture from "@/components/EmailCapture";
 
-// Conversion-optimised audit preview — no terminal aesthetic.
-// Designed to answer the #1 skeptic objection: "What exactly am I getting?"
-// Each deliverable is framed as a business outcome, not a feature.
-
 const deliverables = [
   {
     number: "01",
@@ -38,25 +34,25 @@ const deliverables = [
 
 const AuditPreviewClean = () => {
   return (
-    <section id="audit-preview" className="py-32 px-6">
+    <section id="audit-preview" className="py-32 px-6 bg-card">
       <div className="container max-w-5xl mx-auto">
 
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           className="max-w-2xl mx-auto text-center mb-20"
         >
-          <span className="font-mono text-xs text-primary/60 tracking-[0.2em] uppercase mb-4 block crt-glow">/// what you'll receive</span>
-          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-medium mb-6 matrix-heading-glow">
+          <span className="section-label mb-5 block">Free audit</span>
+          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl leading-tight mb-6">
             Your free audit,{" "}
-            <span className="italic text-primary">unpacked</span>
+            <em style={{ fontStyle: "italic" }}>unpacked.</em>
           </h2>
-          <p className="text-muted-foreground text-lg leading-relaxed font-medium">
-            Not a sales call disguised as a report. A genuine breakdown of where you
-            stand in AI search — delivered in 48 hours, no strings attached.
+          <p className="text-muted-foreground text-lg leading-relaxed">
+            Not a sales call disguised as a report. A genuine breakdown of where you stand
+            in AI search — delivered in 48 hours, no strings attached.
           </p>
         </motion.div>
 
@@ -67,28 +63,24 @@ const AuditPreviewClean = () => {
               key={i}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="grid md:grid-cols-[80px_1fr_1fr] gap-6 md:gap-10 py-10 border-t border-border/50 last:border-b items-start"
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.6, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
+              className="grid md:grid-cols-[64px_1fr_1fr] gap-6 md:gap-10 py-10 border-t border-border/50 last:border-b items-start"
             >
               {/* Number */}
-              <span className="font-mono text-4xl font-medium text-primary/20 crt-glow">
-                {item.number}
-              </span>
+              <span className="font-display text-4xl text-primary/30">{item.number}</span>
 
               {/* Title + description */}
               <div>
-                <h3 className="font-display text-xl font-medium mb-3">{item.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  {item.description}
-                </p>
+                <h3 className="font-display text-xl mb-3">{item.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{item.description}</p>
               </div>
 
               {/* Outcome */}
               <div className="flex items-start gap-3 md:pt-0.5">
-                <span className="text-primary crt-glow mt-0.5 shrink-0">▸</span>
-                <p className="text-foreground/80 text-sm font-medium leading-relaxed italic">
-                  {item.outcome}
+                <span className="text-primary mt-0.5 shrink-0 text-base">→</span>
+                <p className="text-foreground/80 text-sm leading-relaxed">
+                  <em style={{ fontStyle: "italic" }}>{item.outcome}</em>
                 </p>
               </div>
             </motion.div>
@@ -99,9 +91,9 @@ const AuditPreviewClean = () => {
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.5 }}
-          className="flex flex-wrap justify-center gap-x-10 gap-y-3 mb-14 text-xs font-mono text-muted-foreground tracking-wide"
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+          className="flex flex-wrap justify-center gap-x-10 gap-y-3 mb-14 text-xs font-sans text-muted-foreground tracking-wide"
         >
           <span>✓ No credit card</span>
           <span>✓ No sales call unless you want one</span>
@@ -113,11 +105,11 @@ const AuditPreviewClean = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           className="flex justify-center"
         >
-          <EmailCapture buttonText=">>> Get My Free Audit" />
+          <EmailCapture buttonText="Get My Free Audit" />
         </motion.div>
 
       </div>

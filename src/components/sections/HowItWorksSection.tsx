@@ -4,53 +4,67 @@ const steps = [
   {
     step: "01",
     title: "Audit",
-    description: "We scan your brand's presence across ChatGPT, Perplexity, Claude, and Google AI Overviews — then benchmark it against your top competitors. You'll see exactly where you're invisible, what they're winning, and which queries you should own but don't.",
+    description:
+      "We scan your brand across ChatGPT, Perplexity, Claude, Gemini, and Google AI Overviews, then benchmark against your top competitors. You see exactly where you're invisible and what they're winning.",
   },
   {
     step: "02",
-    title: "Sprint",
-    description: "Four to six weeks of focused execution. We edit your content for AI citation, build your brand authority across the right sources, and target the specific queries your buyers are already asking. No strategy decks. Just the work.",
+    title: "Strategise",
+    description:
+      "We build a custom AEO/GEO roadmap based on your market, your competitors, and the specific queries your buyers are already asking AI platforms. No generic playbooks.",
   },
   {
     step: "03",
-    title: "Dominate",
-    description: "Your brand becomes the answer. We track citation growth weekly, give you a clear monthly view of how you stack up against competitors, and expand your presence as the AI search landscape keeps shifting. You stay ahead. They play catch-up.",
+    title: "Execute",
+    description:
+      "Four to six weeks of focused work: content optimisation for AI citation, entity building, schema markup, and authority signals. No strategy decks — just the execution.",
+  },
+  {
+    step: "04",
+    title: "Measure",
+    description:
+      "We track citation growth weekly and give you a clear monthly view of your brand's AI visibility versus competitors. As the landscape shifts, we keep you ahead of it.",
   },
 ];
 
 const HowItWorksSection = () => {
   return (
-    <section id="how-it-works" className="py-32 px-6">
-      <div className="container max-w-5xl mx-auto">
+    <section id="how-it-works" className="py-32 px-6 bg-card">
+      <div className="container max-w-6xl mx-auto">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           className="text-center mb-20"
         >
-          <span className="font-mono text-xs text-primary/60 tracking-[0.2em] uppercase mb-4 block crt-glow">/// process.execute()</span>
-          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-medium mb-6 matrix-heading-glow">
-            How it <span className="italic text-primary">works</span>
+          <span className="section-label mb-5 block">Process</span>
+          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl leading-tight">
+            A proven process.{" "}
+            <em style={{ fontStyle: "italic" }}>Measurable results.</em>
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-0">
+        {/* Steps — horizontal on desktop */}
+        <div className="grid md:grid-cols-4 gap-0">
           {steps.map((s, i) => (
             <motion.div
               key={i}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.5, delay: i * 0.15 }}
-              className="text-center px-8 py-10 border-t md:border-t-0 md:border-l border-border/50 first:border-l-0 first:border-t-0"
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.6, delay: i * 0.12, ease: [0.16, 1, 0.3, 1] }}
+              className="px-0 md:px-8 py-10 first:pl-0 last:pr-0 border-t md:border-t-0 md:border-l border-border/40 first:border-l-0 first:border-t-0"
             >
-              <span className="font-mono text-6xl md:text-7xl font-medium text-primary/20 crt-glow">{s.step}</span>
-              <h3 className="font-display text-2xl font-medium mt-4 mb-4">{s.title}</h3>
+              <p className="font-display text-5xl gold-accent mb-5">{s.step}</p>
+              <h3 className="font-display text-xl mb-3">{s.title}</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">{s.description}</p>
             </motion.div>
           ))}
         </div>
+
+        {/* Connecting line — desktop only */}
+        <div className="hidden md:block mt-0 amber-line" />
       </div>
     </section>
   );
