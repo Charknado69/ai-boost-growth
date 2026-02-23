@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
   { label: "Services", href: "#services" },
   { label: "How It Works", href: "#how-it-works" },
   { label: "Why Now", href: "#why-now" },
-  { label: "Contact", href: "#audit-preview" },
+  { label: "Free Audit", href: "#audit-preview" },
 ];
 
 const Navbar = () => {
@@ -69,42 +70,56 @@ const Navbar = () => {
       </header>
 
       {/* Mobile full-screen overlay */}
-      {menuOpen && (
-        <div className="fixed inset-0 z-50 bg-background flex flex-col">
-          <div className="container max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-            <a href="#" className="font-display text-xl text-foreground">
-              Vyzora<span className="text-primary">.</span>
-            </a>
-            <button
-              onClick={() => setMenuOpen(false)}
-              className="p-2 text-muted-foreground hover:text-foreground transition-colors"
-              aria-label="Close menu"
-            >
-              <X size={20} />
-            </button>
-          </div>
-
-          <nav className="flex flex-col items-center justify-center flex-1 gap-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                onClick={() => setMenuOpen(false)}
-                className="font-display text-3xl text-foreground hover:text-primary transition-colors"
-              >
-                {link.label}
+      <AnimatePresence>
+        {menuOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.25, ease: "easeInOut" }}
+            className="fixed inset-0 z-50 bg-background flex flex-col"
+          >
+            <div className="container max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+              <a href="#" className="font-display text-xl text-foreground">
+                Vyzora<span className="text-primary">.</span>
               </a>
-            ))}
-            <a
-              href="#audit-preview"
-              onClick={() => setMenuOpen(false)}
-              className="mt-4 h-12 px-8 rounded-xl bg-primary text-primary-foreground font-sans font-medium text-base flex items-center hover:bg-primary/90 transition-colors"
-            >
-              Get Free Audit
-            </a>
-          </nav>
-        </div>
-      )}
+              <button
+                onClick={() => setMenuOpen(false)}
+                className="p-2 text-muted-foreground hover:text-foreground transition-colors"
+                aria-label="Close menu"
+              >
+                <X size={20} />
+              </button>
+            </div>
+
+            <nav className="flex flex-col items-center justify-center flex-1 gap-8">
+              {navLinks.map((link, i) => (
+                <motion.a
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setMenuOpen(false)}
+                  initial={{ opacity: 0, y: 16 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3, delay: 0.1 + i * 0.06 }}
+                  className="font-display text-3xl text-foreground hover:text-primary transition-colors"
+                >
+                  {link.label}
+                </motion.a>
+              ))}
+              <motion.a
+                href="#audit-preview"
+                onClick={() => setMenuOpen(false)}
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: 0.1 + navLinks.length * 0.06 }}
+                className="mt-4 h-12 px-8 rounded-xl bg-primary text-primary-foreground font-sans font-medium text-base flex items-center hover:bg-primary/90 transition-colors"
+              >
+                Get Free Audit
+              </motion.a>
+            </nav>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 };

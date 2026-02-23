@@ -109,7 +109,7 @@ const AuditPreviewClean = () => {
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           className="flex justify-center"
         >
-          <EmailCapture buttonText="Get My Free Audit" />
+          <EmailCapture buttonText="Get Your Free Audit" />
         </motion.div>
 
       </div>

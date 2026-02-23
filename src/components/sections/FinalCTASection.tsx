@@ -37,7 +37,7 @@ const FinalCTASection = () => {
           </p>
 
           <div className="flex justify-center mb-6">
-            <EmailCapture buttonText="Claim My Free Audit" />
+            <EmailCapture buttonText="Get Your Free Audit" />
           </div>
 
           <p className="text-xs text-muted-foreground font-sans">

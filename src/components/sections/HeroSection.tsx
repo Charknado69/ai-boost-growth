@@ -84,7 +84,7 @@ const HeroSection = () => {
             </p>
 
             <div className="mb-8">
-              <EmailCapture buttonText="Get Your Free AI Audit" />
+              <EmailCapture buttonText="Get Your Free Audit" />
             </div>
 
             {/* Trust bar */}
@@ -95,12 +95,12 @@ const HeroSection = () => {
             </div>
           </motion.div>
 
-          {/* Right: citation graph */}
+          {/* Right: citation graph — full on desktop, compact on mobile */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="relative hidden md:block"
+            className="relative"
           >
             {/* Glow behind SVG */}
             <div
@@ -109,7 +109,21 @@ const HeroSection = () => {
                 background: "radial-gradient(ellipse at 55% 38%, hsl(41 91% 44% / 0.12) 0%, transparent 60%)",
               }}
             />
-            <CitationGraph />
+            {/* Full graph on desktop */}
+            <div className="hidden md:block">
+              <CitationGraph />
+            </div>
+            {/* Compact platform strip on mobile */}
+            <div className="md:hidden flex flex-wrap justify-center gap-3 py-6">
+              {["ChatGPT", "Perplexity", "Claude", "Gemini", "AI Overviews"].map((platform) => (
+                <span
+                  key={platform}
+                  className="px-3 py-1.5 rounded-full border border-primary/20 text-xs text-primary/80 font-sans"
+                >
+                  {platform}
+                </span>
+              ))}
+            </div>
           </motion.div>
         </div>
 
