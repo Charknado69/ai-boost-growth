@@ -4,6 +4,7 @@ import ProblemSection from "@/components/sections/ProblemSection";
 import ServicesSection from "@/components/sections/ServicesSection";
 import HowItWorksSection from "@/components/sections/HowItWorksSection";
 import DifferentiationSection from "@/components/sections/DifferentiationSection";
+import QuotesSection from "@/components/sections/QuotesSection";
 import AuditPreviewClean from "@/components/sections/AuditPreviewClean";
 import WhyNowSection from "@/components/sections/WhyNowSection";
 import FinalCTASection from "@/components/sections/FinalCTASection";
@@ -18,6 +19,7 @@ const Index = () => {
       <ServicesSection />
       <HowItWorksSection />
       <DifferentiationSection />
+      <QuotesSection />
       <AuditPreviewClean />
       <WhyNowSection />
       <FinalCTASection />

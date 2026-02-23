@@ -53,8 +53,8 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground/60 font-sans">
           <p>© {new Date().getFullYear()} Vyzora.ai. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-muted-foreground transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-muted-foreground transition-colors">Terms of Service</a>
+            <a href="/privacy" className="hover:text-muted-foreground transition-colors">Privacy Policy</a>
+            <a href="/terms" className="hover:text-muted-foreground transition-colors">Terms of Service</a>
           </div>
         </div>
       </div>

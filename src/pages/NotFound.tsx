@@ -9,17 +9,21 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <p className="font-mono text-sm text-primary/60 mb-4 crt-glow">/// 404</p>
-        <h1 className="mb-6 font-display text-5xl font-medium">
-          <span className="text-primary crt-glow">Lost</span> in the matrix
+    <div className="flex min-h-screen items-center justify-center bg-background px-6">
+      <div className="text-center max-w-md">
+        <span className="section-label mb-6 block">404</span>
+        <h1 className="font-display text-5xl sm:text-6xl leading-tight mb-4">
+          Page not{" "}
+          <em style={{ fontStyle: "italic" }} className="text-primary">found.</em>
         </h1>
-        <p className="mb-8 text-muted-foreground font-mono text-sm">
-          THE QUESTION IS: ARE YOU SURE YOU'RE IN THE RIGHT PLACE?
+        <p className="text-muted-foreground text-base leading-relaxed mb-10">
+          The page you're looking for doesn't exist or has been moved.
         </p>
-        <a href="/" className="font-mono text-primary hover:text-primary/80 transition-colors text-sm crt-glow">
-          [ START OVER ]
+        <a
+          href="/"
+          className="inline-flex h-12 px-8 rounded-xl bg-primary text-primary-foreground text-sm font-sans font-medium items-center hover:bg-primary/90 transition-colors"
+        >
+          Back to Home
         </a>
       </div>
     </div>

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const stats = [
   {
     stat: "1 in 3",
-    label: "Google searches now shows an AI Overview — pushing your organic listing below the fold before most users even scroll.",
+    label: "Google searches now show an AI Overview — pushing your organic listing below the fold before most users even scroll.",
     source: "Google, 2024",
   },
   {
