@@ -72,15 +72,15 @@ const HeroSection = () => {
           >
             <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl leading-[1.05] tracking-tight mb-6">
               Your customers ask AI what to buy.{" "}
-              <em className="text-primary not-italic" style={{ fontStyle: "italic" }}>
+              <em className="text-primary" style={{ fontStyle: "italic" }}>
                 Make sure your brand is the answer.
               </em>
             </h1>
 
             <p className="text-base sm:text-lg text-muted-foreground mb-10 leading-relaxed max-w-lg">
-              ChatGPT, Perplexity, Claude, and Gemini recommend brands every day —
-              before your customers ever visit your website. We get your brand into
-              those answers and keep it there.
+              ChatGPT, Perplexity, Claude, and Gemini don't just answer questions
+              anymore — they research, compare, and buy on behalf of your customers.
+              If AI doesn't know your brand, neither will they.
             </p>
 
             <div className="mb-8">
@@ -135,7 +135,7 @@ const HeroSection = () => {
           className="mt-20 pt-8 border-t border-border/40 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-0 sm:divide-x divide-border/40"
         >
           {[
-            { stat: "64%", label: "of people act on AI recommendations" },
+            { stat: "47%", label: "of shoppers now use AI before buying" },
             { stat: "35%", label: "more clicks for AI-cited brands" },
             { stat: "48h", label: "audit delivered, no commitment" },
           ].map((item) => (

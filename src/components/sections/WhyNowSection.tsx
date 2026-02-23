@@ -10,17 +10,17 @@ const timeline = [
   {
     year: "2024",
     event:
-      "Google launches AI Overviews to 1B+ users globally. Organic click-through rates drop. The landscape shifts permanently.",
+      "Google launches AI Overviews to 1.5B+ users. Organic click-through rates drop 34%. Half of all consumers now use AI when searching.",
   },
   {
     year: "2025",
     event:
-      "Perplexity, Copilot, and Claude enter the mainstream. Multiple AI platforms are now actively recommending brands to customers. AI-first discovery becomes the default for every high-intent purchase decision.",
+      "AI goes from recommending to buying. ChatGPT, Perplexity, and Google all launch agentic checkout. 47% of shoppers now use AI tools before purchasing.",
   },
   {
     year: "2026",
     event:
-      "Brands that moved early are compounding their advantage — cited more often, recommended more confidently, harder to displace. Those that waited are starting from zero in a market that's already picked its favourites.",
+      "Agentic commerce is projected to reach $20.9B this year — quadrupling 2025. Brands that moved early are compounding their advantage. Those that waited are starting from zero in a market that's already picked its favourites.",
   },
 ];
 
@@ -41,9 +41,9 @@ const WhyNowSection = () => {
             <em style={{ fontStyle: "italic" }}>this year.</em>
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed max-w-xl">
-            Brands moving now are staking out AI citation positions that compound like
-            backlinks once did — and become nearly impossible to displace. Every month
-            you wait, a competitor gets cited in your place.
+            AI has gone from answering questions to researching markets to buying
+            products — in under three years. Brands moving now are staking out
+            positions that compound and become nearly impossible to displace.
           </p>
         </motion.div>
 

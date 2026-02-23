@@ -35,9 +35,10 @@ const ProblemSection = () => {
             <em style={{ fontStyle: "italic" }}>AI search gets you recommended.</em>
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            People now use AI to research what to buy — before they visit a website,
-            read a review, or speak to anyone. If your brand isn't in those answers,
-            you don't exist to them.
+            Your customers are making decisions before they ever reach your website.
+            AI answers their questions, compares their options, and narrows their
+            shortlist — all before you get a chance to make your case. The brands
+            that show up in those answers win. The ones that don't, disappear.
           </p>
         </motion.div>
 

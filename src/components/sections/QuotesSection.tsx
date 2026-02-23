@@ -17,7 +17,7 @@ const dataPoints = [
   },
   {
     stat: "12%",
-    text: "Of URLs cited by ChatGPT, Perplexity, and Copilot rank in Google's top 10. AI citations and Google rankings are almost entirely separate. What your SEO agency is doing has almost no bearing on your AI visibility.",
+    text: "Of URLs cited by ChatGPT, Perplexity, and Copilot also rank in Google's top 10. AI visibility and Google rankings are almost entirely separate games. What your SEO agency is doing has almost no bearing on whether AI recommends you.",
     source: "SE Ranking / Ahrefs, 2025",
   },
 ];

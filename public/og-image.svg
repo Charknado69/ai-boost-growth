@@ -1,72 +1,79 @@
-<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#c6880e" stop-opacity="0.15"/>
+      <stop offset="60%" stop-color="#c6880e" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#1a1613" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="amber-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c6880e" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#c6880e" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#c6880e" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
   <!-- Background -->
-  <rect width="1200" height="630" fill="#141210"/>
-
-  <!-- Subtle warm vignette -->
-  <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
-    <stop offset="0%" stop-color="#1C1915"/>
-    <stop offset="100%" stop-color="#0D0B09"/>
-  </radialGradient>
-  <rect width="1200" height="630" fill="url(#vignette)"/>
-
-  <!-- Ambient amber glow — top right -->
-  <radialGradient id="glow" cx="75%" cy="30%" r="45%">
-    <stop offset="0%" stop-color="#D4960A" stop-opacity="0.12"/>
-    <stop offset="100%" stop-color="#D4960A" stop-opacity="0"/>
-  </radialGradient>
+  <rect width="1200" height="630" fill="#1a1613"/>
   <rect width="1200" height="630" fill="url(#glow)"/>
 
-  <!-- Citation network — abstract nodes (right side) -->
-  <path d="M820 180 Q920 140 1010 200" stroke="#D4960A" stroke-opacity="0.25" stroke-width="1.5"/>
-  <path d="M820 180 Q870 280 960 310" stroke="#D4960A" stroke-opacity="0.18" stroke-width="1"/>
-  <path d="M1010 200 Q1060 260 960 310" stroke="#D4960A" stroke-opacity="0.20" stroke-width="1"/>
-  <path d="M1010 200 Q1080 170 1100 230" stroke="#D4960A" stroke-opacity="0.15" stroke-width="1"/>
-  <path d="M900 250 Q920 310 960 310" stroke="#D4960A" stroke-opacity="0.15" stroke-width="1"/>
+  <!-- Citation network nodes (decorative) -->
+  <!-- Connecting arcs -->
+  <path d="M820 200 Q900 280 950 250" stroke="#c6880e" stroke-opacity="0.2" stroke-width="1.5" fill="none"/>
+  <path d="M820 200 Q860 340 980 350" stroke="#c6880e" stroke-opacity="0.15" stroke-width="1" fill="none"/>
+  <path d="M950 250 Q1020 300 980 350" stroke="#c6880e" stroke-opacity="0.18" stroke-width="1" fill="none"/>
+  <path d="M820 200 Q780 150 800 100" stroke="#c6880e" stroke-opacity="0.12" stroke-width="1" fill="none"/>
+  <path d="M950 250 Q1050 200 1080 240" stroke="#c6880e" stroke-opacity="0.12" stroke-width="1" fill="none"/>
+  <path d="M870 270 Q900 230 950 250" stroke="#c6880e" stroke-opacity="0.25" stroke-width="1.5" fill="none"/>
 
   <!-- Outer nodes -->
-  <circle cx="1100" cy="230" r="6" fill="#D4960A" fill-opacity="0.30"/>
-  <circle cx="960" cy="310" r="8" fill="#D4960A" fill-opacity="0.35"/>
-  <circle cx="820" cy="180" r="7" fill="#D4960A" fill-opacity="0.32"/>
+  <circle cx="800" cy="100" r="5" fill="#c6880e" opacity="0.3"/>
+  <circle cx="1080" cy="240" r="6" fill="#c6880e" opacity="0.25"/>
+  <circle cx="980" cy="350" r="7" fill="#c6880e" opacity="0.28"/>
+  <circle cx="750" cy="320" r="4" fill="#c6880e" opacity="0.18"/>
 
-  <!-- Secondary node -->
-  <circle cx="900" cy="250" r="14" fill="#D4960A" fill-opacity="0.08"/>
-  <circle cx="900" cy="250" r="6" fill="#D4960A" fill-opacity="0.50"/>
+  <!-- Secondary nodes -->
+  <circle cx="820" cy="200" r="12" fill="#c6880e" opacity="0.08"/>
+  <circle cx="820" cy="200" r="5" fill="#c6880e" opacity="0.45"/>
 
-  <!-- Primary node — Your Brand -->
-  <circle cx="1010" cy="200" r="32" fill="#D4960A" fill-opacity="0.07"/>
-  <circle cx="1010" cy="200" r="20" fill="#D4960A" fill-opacity="0.14"/>
-  <circle cx="1010" cy="200" r="10" fill="#D4960A" fill-opacity="0.85"/>
+  <circle cx="870" cy="270" r="10" fill="#c6880e" opacity="0.06"/>
+  <circle cx="870" cy="270" r="4" fill="#c6880e" opacity="0.4"/>
 
-  <!-- Platform labels -->
-  <text x="800" y="176" fill="#F5F0E8" fill-opacity="0.40" font-size="13" font-family="Georgia, serif">ChatGPT</text>
-  <text x="1108" y="226" fill="#F5F0E8" fill-opacity="0.38" font-size="12" font-family="Georgia, serif">Perplexity</text>
-  <text x="938" y="334" fill="#F5F0E8" fill-opacity="0.38" font-size="12" font-family="Georgia, serif">Gemini</text>
-  <text x="862" y="268" fill="#F5F0E8" fill-opacity="0.36" font-size="12" font-family="Georgia, serif">Claude</text>
-  <text x="986" y="246" fill="#D4960A" fill-opacity="0.90" font-size="12" font-weight="600" font-family="Georgia, serif">Your Brand</text>
+  <!-- Primary node -->
+  <circle cx="950" cy="250" r="32" fill="#c6880e" opacity="0.05"/>
+  <circle cx="950" cy="250" r="20" fill="#c6880e" opacity="0.1"/>
+  <circle cx="950" cy="250" r="11" fill="#c6880e" opacity="0.2"/>
+  <circle cx="950" cy="250" r="6" fill="#c6880e" opacity="0.8"/>
 
-  <!-- Amber top accent line -->
-  <line x1="80" y1="72" x2="280" y2="72" stroke="#D4960A" stroke-opacity="0.50" stroke-width="1"/>
+  <!-- Platform labels near nodes -->
+  <text x="778" y="94" fill="#e8d5b5" opacity="0.4" font-size="11" font-family="system-ui, sans-serif">ChatGPT</text>
+  <text x="1060" y="235" fill="#e8d5b5" opacity="0.35" font-size="11" font-family="system-ui, sans-serif">Perplexity</text>
+  <text x="960" y="372" fill="#e8d5b5" opacity="0.35" font-size="11" font-family="system-ui, sans-serif">Gemini</text>
+  <text x="793" y="220" fill="#e8d5b5" opacity="0.35" font-size="10" font-family="system-ui, sans-serif">Claude</text>
+  <text x="843" y="290" fill="#e8d5b5" opacity="0.32" font-size="9" font-family="system-ui, sans-serif">AI Overview</text>
+  <text x="925" y="280" fill="#c6880e" opacity="0.85" font-size="12" font-weight="600" font-family="system-ui, sans-serif">Your Brand</text>
 
-  <!-- Logo — Vyzora. -->
-  <text x="80" y="130" fill="#F5F0E8" font-size="64" font-family="Georgia, 'Times New Roman', serif" font-weight="400" letter-spacing="-1">Vyzora</text>
-  <text x="330" y="130" fill="#D4960A" font-size="64" font-family="Georgia, 'Times New Roman', serif">.</text>
+  <!-- Amber divider -->
+  <rect x="80" y="400" width="440" height="1" fill="url(#amber-line)"/>
+
+  <!-- Logo -->
+  <text x="80" y="80" fill="#e8d5b5" font-size="26" font-weight="400" font-family="Georgia, serif">Vyzora</text>
+  <text x="175" y="80" fill="#c6880e" font-size="26" font-weight="400" font-family="Georgia, serif">.</text>
 
   <!-- Headline -->
-  <text x="80" y="220" fill="#F5F0E8" fill-opacity="0.95" font-size="38" font-family="Georgia, 'Times New Roman', serif" font-weight="400" letter-spacing="-0.5">Your customers ask AI what to buy.</text>
-  <text x="80" y="272" fill="#D4960A" font-size="38" font-family="Georgia, 'Times New Roman', serif" font-style="italic">Make sure your brand is the answer.</text>
+  <text x="80" y="200" fill="#e8d5b5" font-size="48" font-weight="400" font-family="Georgia, serif">Your customers</text>
+  <text x="80" y="260" fill="#e8d5b5" font-size="48" font-weight="400" font-family="Georgia, serif">ask AI what to buy.</text>
+  <text x="80" y="340" fill="#c6880e" font-size="48" font-style="italic" font-weight="400" font-family="Georgia, serif">Are you the answer?</text>
 
-  <!-- Divider -->
-  <line x1="80" y1="316" x2="520" y2="316" stroke="#F5F0E8" stroke-opacity="0.12" stroke-width="1"/>
+  <!-- Sub-line -->
+  <text x="80" y="440" fill="#e8d5b5" opacity="0.5" font-size="16" font-family="system-ui, sans-serif">Free AI Visibility Audit — delivered in 48 hours</text>
 
-  <!-- Subline -->
-  <text x="80" y="356" fill="#F5F0E8" fill-opacity="0.50" font-size="20" font-family="Georgia, serif" letter-spacing="0.5">AEO &amp; GEO Optimisation Agency</text>
+  <!-- Stats -->
+  <text x="80" y="510" fill="#c6880e" font-size="28" font-family="Georgia, serif">64%</text>
+  <text x="155" y="510" fill="#e8d5b5" opacity="0.45" font-size="13" font-family="system-ui, sans-serif">act on AI recommendations</text>
 
-  <!-- Bottom trust signals -->
-  <text x="80" y="540" fill="#F5F0E8" fill-opacity="0.35" font-size="16" font-family="Arial, sans-serif" letter-spacing="1">FREE AUDIT  ·  48-HOUR DELIVERY  ·  NO COMMITMENT</text>
+  <text x="420" y="510" fill="#c6880e" font-size="28" font-family="Georgia, serif">35%</text>
+  <text x="487" y="510" fill="#e8d5b5" opacity="0.45" font-size="13" font-family="system-ui, sans-serif">more clicks for cited brands</text>
 
-  <!-- Bottom amber line -->
-  <line x1="80" y1="568" x2="1120" y2="568" stroke="#D4960A" stroke-opacity="0.20" stroke-width="1"/>
-
-  <!-- Domain -->
-  <text x="80" y="598" fill="#D4960A" fill-opacity="0.60" font-size="15" font-family="Arial, sans-serif" letter-spacing="1">VYZORA.AI</text>
+  <!-- URL -->
+  <text x="80" y="580" fill="#e8d5b5" opacity="0.3" font-size="14" font-family="system-ui, sans-serif">vyzora.ai</text>
 </svg>
