@@ -1,54 +1,6 @@
 import { motion } from "framer-motion";
 import EmailCapture from "@/components/EmailCapture";
-
-// Abstract SVG citation network — amber nodes representing AI platforms citing your brand
-const CitationGraph = () => (
-  <svg
-    viewBox="0 0 520 420"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className="w-full h-full"
-    aria-hidden="true"
-  >
-    {/* Connecting arcs — stronger opacity */}
-    <path d="M120 210 Q260 80 390 150" stroke="hsl(41 91% 44% / 0.35)" strokeWidth="1.5" />
-    <path d="M120 210 Q200 320 340 310" stroke="hsl(41 91% 44% / 0.22)" strokeWidth="1" />
-    <path d="M390 150 Q430 240 340 310" stroke="hsl(41 91% 44% / 0.28)" strokeWidth="1" />
-    <path d="M390 150 Q460 100 470 180" stroke="hsl(41 91% 44% / 0.20)" strokeWidth="1" />
-    <path d="M120 210 Q80 140 100 80" stroke="hsl(41 91% 44% / 0.20)" strokeWidth="1" />
-    <path d="M260 200 Q260 280 340 310" stroke="hsl(41 91% 44% / 0.22)" strokeWidth="1" />
-    <path d="M260 200 Q320 170 390 150" stroke="hsl(41 91% 44% / 0.40)" strokeWidth="2" />
-
-    {/* Outer nodes */}
-    <circle cx="100" cy="80" r="6" fill="hsl(41 91% 44% / 0.40)" />
-    <circle cx="470" cy="180" r="7" fill="hsl(41 91% 44% / 0.35)" />
-    <circle cx="340" cy="310" r="8" fill="hsl(41 91% 44% / 0.38)" />
-    <circle cx="70" cy="300" r="5" fill="hsl(41 91% 44% / 0.25)" />
-
-    {/* Secondary nodes */}
-    <circle cx="120" cy="210" r="14" fill="hsl(41 91% 44% / 0.12)" />
-    <circle cx="120" cy="210" r="6" fill="hsl(41 91% 44% / 0.60)" />
-
-    <circle cx="260" cy="200" r="16" fill="hsl(41 91% 44% / 0.10)" />
-    <circle cx="260" cy="200" r="7" fill="hsl(41 91% 44% / 0.55)" />
-
-    {/* Primary node — "Your Brand" — pulsing outer ring */}
-    <circle cx="370" cy="150" r="36" fill="hsl(41 91% 44% / 0.06)" className="animate-[node-pulse_3s_ease-in-out_infinite]" />
-    <circle cx="370" cy="150" r="24" fill="hsl(41 91% 44% / 0.12)" />
-    <circle cx="370" cy="150" r="14" fill="hsl(41 91% 44% / 0.25)" />
-    <circle cx="370" cy="150" r="7" fill="hsl(41 91% 44% / 0.90)" />
-
-    {/* Platform labels */}
-    <text x="86" y="72" fill="hsl(38 53% 93% / 0.50)" fontSize="10" fontFamily="DM Sans, sans-serif">ChatGPT</text>
-    <text x="446" y="175" fill="hsl(38 53% 93% / 0.45)" fontSize="10" fontFamily="DM Sans, sans-serif">Perplexity</text>
-    <text x="316" y="334" fill="hsl(38 53% 93% / 0.45)" fontSize="10" fontFamily="DM Sans, sans-serif">Gemini</text>
-    <text x="92" y="232" fill="hsl(38 53% 93% / 0.45)" fontSize="10" fontFamily="DM Sans, sans-serif">Claude</text>
-    <text x="228" y="218" fill="hsl(38 53% 93% / 0.42)" fontSize="9" fontFamily="DM Sans, sans-serif">AI Overview</text>
-
-    {/* "Your Brand" label — below node with amber colour */}
-    <text x="348" y="200" fill="hsl(41 91% 44% / 0.95)" fontSize="11" fontWeight="600" fontFamily="DM Sans, sans-serif">Your Brand</text>
-  </svg>
-);
+import AIConversation from "@/components/AIConversation";
 
 const HeroSection = () => {
   return (
@@ -83,9 +35,17 @@ const HeroSection = () => {
               If AI doesn't know your brand, neither will they.
             </p>
 
-            <div className="mb-8">
+            <div className="mb-4">
               <EmailCapture buttonText="Get Your Free Audit" />
             </div>
+
+            {/* "Go check" provocation */}
+            <p className="text-xs text-muted-foreground/70 font-sans mb-8 max-w-md leading-relaxed">
+              Go ask ChatGPT what the best{" "}
+              <span className="text-foreground/60">[your product category]</span>{" "}
+              is. If your brand isn't in the answer, you have a problem.
+              If your competitor is — you have an urgent one.
+            </p>
 
             {/* Trust bar */}
             <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs text-muted-foreground font-sans">
@@ -95,34 +55,27 @@ const HeroSection = () => {
             </div>
           </motion.div>
 
-          {/* Right: citation graph — full on desktop, compact on mobile */}
+          {/* Right: AI conversation mockup */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 1, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
             className="relative"
           >
-            {/* Glow behind SVG */}
+            {/* Glow behind card */}
             <div
               className="absolute inset-0 pointer-events-none"
               style={{
-                background: "radial-gradient(ellipse at 55% 38%, hsl(41 91% 44% / 0.12) 0%, transparent 60%)",
+                background: "radial-gradient(ellipse at 55% 38%, hsl(41 91% 44% / 0.10) 0%, transparent 60%)",
               }}
             />
-            {/* Full graph on desktop */}
+            {/* Desktop: full conversation */}
             <div className="hidden md:block">
-              <CitationGraph />
+              <AIConversation />
             </div>
-            {/* Compact platform strip on mobile */}
-            <div className="md:hidden flex flex-wrap justify-center gap-3 py-6">
-              {["ChatGPT", "Perplexity", "Claude", "Gemini", "AI Overviews"].map((platform) => (
-                <span
-                  key={platform}
-                  className="px-3 py-1.5 rounded-full border border-primary/20 text-xs text-primary/80 font-sans"
-                >
-                  {platform}
-                </span>
-              ))}
+            {/* Mobile: compact version */}
+            <div className="md:hidden">
+              <AIConversation />
             </div>
           </motion.div>
         </div>
